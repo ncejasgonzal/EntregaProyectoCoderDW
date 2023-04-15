@@ -20,33 +20,13 @@ body{
 }
 
 
-.card-group{
-    column-gap: 10px;
-    width: 100%;
-    height: 100%;
-    
-}
-
 .card-img-top{
     width: 100%;
-    height: 68%;
+    height: 60%;
     object-fit: cover;
 }
 
-.decoracionCard{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
 
-.card-body{
-    background-color:#36302d91;
-}
-
-
-.main__div__cards{
-    width: 90%;
-    
-}
 /*
 .card{
     position: relative;
