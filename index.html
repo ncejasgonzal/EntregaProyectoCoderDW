@@ -8,18 +8,19 @@
     <title>MoskúBarberiaTradicional</title>
     <!--icono favicon-->
     <link rel="icon" href="favicon.ico.png" type="image/x-icon">
-    <!--link cdn para iconos Fontawesome-->
-    <script src="https://kit.fontawesome.com/268dc6ed7a.js" crossorigin="anonymous"></script>
+    
     <!--LINK CSS BOOTSTRAP
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
     <!--LOCAL BOOTSTRAP-->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <!--link cdn para iconos Fontawesome-->
+    <script src="https://kit.fontawesome.com/268dc6ed7a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
+    <header class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent h5">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="./assets/img/Logo_mosku_2-removebg-preview.png" height="75"
@@ -51,61 +52,55 @@
         </nav>
     </header>
 
-    <main class="fondoMain">
-        <hr class="marginHr">
-        <br>
-        <br>
-        <section class="sectionCards">
-            <div class="card">
-                <a href="./pages/reservas.html"><img src="./assets/img/IMAGEN CARD RESERVAS.jpg" alt="Reservas"></a>
-                <h1>
-                    Reservas
-                </h1>
-                <p>
-                    No te quedes sin tu turno.
-                </p>
+    <main>
+        <section class="">
+            <div class="h1 d-flex justify-content-center flex-wrap">
+                <h1 class=" ">MOSKÚ BARBERIA TRADICIONAL</h1>
             </div>
-            <div class="card">
-                <a href="./pages/unirse.html"><img src="./assets/img/IMAGEN CARD UNIRSE.jpg" alt="Unirse"></a>
-                <h1>
-                    Unirse
-                </h1>
-                <p>
-                    Suscribite a nuestras noticias.
-                    <br>
-                </p>
-            </div>
-            <div class="card">
-                <a href="./pages/ubicacion.html"><img src="./assets/img/IMAGEN CARD UBICACION 1.avif"
-                        alt="Ubicación"></a>
-                <h1>
-                    Ubicación
-                </h1>
-                <p>No estamos lejos!
-                    Vení a visitarnos.</p>
+            <br>
+            <div class="h3 d-flex justify-content-center flex-wrap">
+                <h2 class="">Desde 2020</h2>
+                <br>
+                <p" class="h4 d-flex justify-content-center flex-wrap text-center parrafoIndex">Nos especializamos en la
+                    imagen capilar de cada individuo, destacando sus mas
+                    bellos rasgos y haciendo que luzcan un estilo inigualable.
+                    En simples palabras, como no somos los únicos, decidimos ser los mejores.</p>
             </div>
         </section>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="centrarVideo">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/t37BI1_utT4?start=10"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </div>
-        <br>
         <hr>
+        <section class="container-fluid justify-content-center row main__section__card">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body cardTexto">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                    </p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body cardTexto">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body cardTexto">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class=" footer fondoFooter centrarFooter fuenteFooter">
-        <div class="contenedorIconos">
+    <footer class="container-fluid d-flex justify-content-center row">
+        <div class="contenedorIconos col-md-12">
             <a href="https://www.facebook.com" target="_blank"><i class="iconos fa-brands fa-facebook fa-shake"></i></a>
             <a href="https://www.instagram.com" target="_blank"><i
                     class="iconos fa-brands fa-instagram fa-shake"></i><i></a>
             <a href="https://www.whatsapp.com" target="_blank"><i class="iconos fa-brands fa-whatsapp fa-shake"></i></a>
         </div>
-        <div class="parrafosFooter">
+        <div class="parrafosFooter col-md-12" >
             <p class="parrafoFooter1">Contactate con nosotros Moskubarberia2020@gmail.com</p>
             <p class="parrafoFooter2">TODOS LOS DERECHOS RESERVADOS ©
                 - Nicolás A. Cejas G. -</p>
