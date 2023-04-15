@@ -1,0 +1,221 @@
+/*import de fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header{
+    height: 100vh;
+}
+
+.fondoHeader{
+    background-image: url("../assets/img/Fondomoskucompr.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+
+.contenedorLogo{
+    width: 48%;
+    display: inline-block;
+    padding-top: 15px;
+    padding-right: 150px;
+    padding-left: 43px;
+}
+
+.logo{
+    width: 50%;
+}
+
+.navegacion{
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+}
+
+.listaItem{
+    list-style: none;
+    display: inline-block;
+    padding-left: 1rem;
+    padding-top: 50px;
+    padding-right: 3rem;
+    overflow: hidden;
+    position: relative;
+    top:-100px;
+}
+
+.linkNav{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-size: 1,7rem;
+}
+
+.introIndex{
+    text-align: center;
+    text-align: justify;
+}
+
+.fuenteGrande1{
+    width: 50%;
+    margin: 0 auto;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    background-color: #fdfbfb4d;
+    backdrop-filter: blur(5%);
+    -webkit-backdrop-filter: blur(12px);
+    text-align: center;
+}
+
+.fuenteMediana{
+    width: 50%;
+    margin: 0 auto;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1,95rem;
+    background-color: #fdfbfb8e;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    text-align: center;
+}
+
+.parrafo1{
+    font-size: 1,75rem;
+}
+
+main{
+    height: auto;
+}
+
+
+
+.fondoMain{
+    /*imagen de fondo para el sitio*/
+    /*
+    background-image: url("../assets/img/Logo\ mosku\ 2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;;*/
+    background-image: linear-gradient(to bottom, #d48c64, #d5936e, #d59a78, #d5a083, #d5a78d, #d5a78d, #d5a78d, #d5a78d, #d5a083, #d59a78, #d5936e, #d48c64);
+    color: black;    
+}
+
+.marginHR{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.sectionCards{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.sectionCards p{
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 10px;
+}
+
+.card{
+    width: 30%;
+    display: inline-block;
+    box-shadow: -2px 1px 21px 16px rgba(38,36,36,0.49);
+                -webkit-caja-sombra: -2px 1px 21px 16px rgba(38,36,36,0.49);
+                -moz-box-shadow: -2px 1px 21px 16px rgba(38,36,36,0.49);
+    background-color:#eb976a;
+    padding: 25px;
+    border-radius:20px;
+}
+
+.card img{
+    width: 90%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.centrarVideo{
+    margin-left:29%;
+}
+
+.fondoFooter{
+    background-image: linear-gradient(to bottom, #d48c64, #d5936e, #d59a78, #d5a083, #d5a78d, #d5a78d, #d5a78d, #d5a78d, #d5a083, #d59a78, #d5936e, #d48c64);
+}
+
+.footer{
+    font-family: 'Open Sans', sans-serif;
+    height: auto;
+    color:black;
+    text-align: center;
+    margin-bottom: 0 auto;
+    padding-left: 15rem auto;
+}
+
+.parrafosFooter{
+    margin-left: 3%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.parrafoFooter1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color:black;
+    text-align: center;
+}
+
+.parrafoFooter2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 0,5rem;
+    color:black;
+    text-align: center;
+}
+
+.contenedorIconos{
+    position: relative;
+    margin-top: 0 auto;
+    padding-top: 1%;
+    margin-left: 50% auto;
+    
+    
+}
+
+.iconos{
+    position: relative;
+    display: inline-block;
+    font-size: 3rem;
+    color:black;
+    margin-top: 0;
+    padding-left: 3rem;
+    text-align: center;
+}
+
+
+.fa-shake {
+    -webkit-animation-name: fa-shake;
+            animation-name: fa-shake;
+    -webkit-animation-delay: var(--fa-animation-delay, 0s);
+            animation-delay: var(--fa-animation-delay, 0s);
+    -webkit-animation-direction: var(--fa-animation-direction, normal);
+            animation-direction: var(--fa-animation-direction, normal);
+    -webkit-animation-duration: var(--fa-animation-duration, 1s);
+            animation-duration: var(--fa-animation-duration, 1s);
+    -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+            animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+            animation-timing-function: var(--fa-animation-timing, linear); 
+}
+
+/* -----------------------------HASTA ACÁ LLEGA EL ESTILADO DEL INDEX!!!!!---------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+
+/* ----------------------------------COMIENZA ESTILADO DE "PRODUCTOS"--------------------------------*/
+
