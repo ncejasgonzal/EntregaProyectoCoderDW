@@ -12,17 +12,48 @@ body{
     background-size: cover;
     color: aliceblue;
     font-family: 'Open Sans' , sans-serif;
-    padding: 10px;
+    
 }
+
+@media screen and (max-width: 1199px) and (min-width: 0px){
+    .h1Index {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 0px){
+    .h2Index {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 0px){
+    .h4Index {
+    font-size: 1rem;
+    margin-top: 0.4rem;
+    }
+}
+
 
 .parrafoIndex{
     margin: 1rem;
 }
 
+
 .estiloCard{
     background-color: rgba(126, 117, 117, 0.555);
     font-family: 'Open Sans' , sans-serif;
     font-weight: 100;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 0px){
+    .estiloCard {
+    margin-top: 0.8rem;
+    }
 }
 
 .card-img-top{
@@ -44,59 +75,6 @@ body{
     color: black;
 }
 
-
-.contenedorIconos{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin-top: 0 auto;
-    padding-top: 1%;
-    
-    
-    
-}
-
-.iconos{
-    justify-content: center;
-    position: relative;
-    display: inline-block;
-    font-size: 3rem;
-    color:rgb(185, 180, 180);
-    margin-top: 0;
-    text-align: center;
-    padding: 1rem;
-}
-
-
-.fa-shake {
-    -webkit-animation-name: fa-shake;
-            animation-name: fa-shake;
-    -webkit-animation-delay: var(--fa-animation-delay, 0s);
-            animation-delay: var(--fa-animation-delay, 0s);
-    -webkit-animation-direction: var(--fa-animation-direction, normal);
-            animation-direction: var(--fa-animation-direction, normal);
-    -webkit-animation-duration: var(--fa-animation-duration, 1s);
-            animation-duration: var(--fa-animation-duration, 1s);
-    -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-            animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-    -webkit-animation-timing-function: var(--fa-animation-timing, linear);
-            animation-timing-function: var(--fa-animation-timing, linear); 
-}
-
-.parrafosFooter{
-    column-gap: 10px;
-}
-
-.parrafoFooter1{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-}
-
-.parrafoFooter2{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.contenedorVideo{
+    margin-top: 2rem;
 }

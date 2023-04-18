@@ -30,21 +30,21 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
+                    <ul class="navbar-nav gap-2 ">
+                        <li class="nav-item btn btn-secondary">
                             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/productos.html">Productos</a>
+                        <li class="nav-item btn btn-secondary">
+                            <a class="nav-link active" href="./pages/productos.html">Productos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/reservas.html">Reservas</a>
+                        <li class="nav-item btn btn-secondary">
+                            <a class="nav-link active" href="./pages/reservas.html">Reservas</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/ubicacion.html">Ubicación</a>
+                        <li class="nav-item btn btn-secondary">
+                            <a class="nav-link active" href="./pages/ubicacion.html">Ubicación</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/unirse.html">Unirse</a>
+                        <li class="nav-item btn btn-secondary">
+                            <a class="nav-link active" href="./pages/unirse.html">Unirse</a>
                         </li>
                     </ul>
                 </div>
@@ -53,15 +53,13 @@
     </header>
 
     <main class="container">
-        <section class="">
-            <div class="h1 d-flex justify-content-center flex-wrap">
-                <h1 class=" ">MOSKÚ BARBERIA TRADICIONAL</h1>
+        <section>
+            <div class="h1  d-flex justify-content-center flex-wrap">
+                <h1 class="h1Index ">MOSKÚ BARBERIA TRADICIONAL</h1>
             </div>
-            <br>
-            <div class="h3 d-flex justify-content-center flex-wrap">
-                <h2 class="">Desde 2020</h2>
-                <br>
-                <p" class="h4 d-flex justify-content-center flex-wrap text-center parrafoIndex">Nos especializamos en la
+            <div class="h3  d-flex justify-content-center flex-wrap">
+                <h2 class="h2Index">Desde 2020</h2>
+                <p" class="h4 d-flex justify-content-center flex-wrap text-center h4Index">Nos especializamos en la
                     imagen capilar de cada individuo, destacando sus mas
                     bellos rasgos y haciendo que luzcan un estilo inigualable.
                     En simples palabras, como no somos los únicos, decidimos ser los mejores.</p>
@@ -72,7 +70,8 @@
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-4">
                     <div class="card estiloCard">
-                        <img src="./assets/img/IMAGEN CARD RESERVAS.jpg" class="card-img-top" alt="almanaque de reservas">
+                        <img src="./assets/img/IMAGEN CARD RESERVAS.jpg" class="card-img-top"
+                            alt="almanaque de reservas">
                         <div class="card-body">
                             <h5 class="card-title">Reservas</h5>
                             <p class="card-text">Apurate, no te quedes sin tu turno!.
@@ -83,7 +82,8 @@
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4">
                     <div class="card estiloCard">
-                        <img src="./assets/img/IMAGEN CARD UBICACION 1.avif" class="card-img-top" alt="Mapa de ubicacion ilustrativo">
+                        <img src="./assets/img/IMAGEN CARD UBICACION 1.avif" class="card-img-top"
+                            alt="Mapa de ubicacion ilustrativo">
                         <div class="card-body">
                             <h5 class="card-title">Ubicación</h5>
                             <p class="card-text">No estamos lejos, veni a visitarnos!
@@ -103,8 +103,12 @@
                         </div>
                     </div>
                 </div>
-            </div>    
-            
+            </div>
+            <div class="contenedorVideo ratio ratio-21x9">
+                <iframe src="https://www.youtube.com/embed/t37BI1_utT4?start=10" title="Video ilustrativo" allowfullscreen></iframe>
+            </div>
+            <hr>
+
             <!--<div class="card-group">
                 <div class="card ">
                     <a class="decoracionCard" href="./pages/reservas.html">
@@ -143,18 +147,53 @@
             </div>-->
         </section>
     </main>
-    <footer class="container-fluid d-flex justify-content-center row">
-        <div class="contenedorIconos col-md-12">
-            <a href="https://www.facebook.com" target="_blank"><i class="iconos fa-brands fa-facebook fa-shake"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i
+    <footer class="container-fluid bg-transparent text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="buttonFooter btn text-white btn-floating m-3" style="background-color: #3b5998;" href="https://www.facebook.com" target="_blank" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="buttonFooter btn text-white btn-floating m-3" style="background-color: #55acee;" href="https://twitter.com/" target="_blank" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Instagram -->
+                <a class="buttonFooter btn text-white btn-floating m-3" style="background-color: #ac2bac;" href="https://www.instagram.com/moskubarberia" target="_blank" role="button"><i
+                    class="fab fa-instagram"></i></a>
+                    
+                <!-- WhatsApp -->
+                <a class="buttonFooter btn text-white btn-floating m-3" style="background-color: #4db937;" href="https://wa.me/1138639232" target="_blank" role="button"><i
+                    class="fab fa-whatsapp"></i></a>
+
+                <!-- Google -->
+                <a class="buttonFooter btn text-white btn-floating m-3" style="background-color: #dd4b39;" href="https://www.google.com" target="_blank" role="button"><i
+                        class="fab fa-google"></i></a>
+
+            </section>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright: Nicolás Agustín Cejas González.
+        </div>
+    </footer>
+
+    <!--
+            <div class="contenedorIconos col-md-12">
+                <a href="https://www.facebook.com" target="_blank"><i class="iconos fa-brands fa-facebook fa-shake"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i
                     class="iconos fa-brands fa-instagram fa-shake"></i></a>
-            <a href="https://www.whatsapp.com" target="_blank"><i class="iconos fa-brands fa-whatsapp fa-shake"></i></a>
-        </div>
-        <div class="parrafosFooter col-12 ">
-            <p class="parrafoFooter1">Contactate con nosotros Moskubarberia2020@gmail.com</p>
-            <p class="parrafoFooter2">TODOS LOS DERECHOS RESERVADOS ©
+                <a href="https://www.whatsapp.com" target="_blank"><i class="iconos fa-brands fa-whatsapp fa-shake"></i></a>
+            </div>
+            <div class="parrafosFooter col-12 ">
+                <p class="parrafoFooter1">Contactate con nosotros Moskubarberia2020@gmail.com</p>
+                <p class="parrafoFooter2">TODOS LOS DERECHOS RESERVADOS ©
                 - Nicolás A. Cejas G. -</p>
+            </div>
         </div>
+        
     </footer>
     <!--LINK JS BOOTSTRAP
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
