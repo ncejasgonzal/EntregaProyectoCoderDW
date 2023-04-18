@@ -1,93 +1,283 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head >
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MoskuBarberiaTradicional</title>
-        <!--link cdn para iconos Fontawesome-->
-        <script src="https://kit.fontawesome.com/268dc6ed7a.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoskúBarberiaTradicional</title>
+    <!--icono favicon-->
+    <link rel="icon" href="../favicon.ico.png" type="image/x-icon">
 
-    <body>
-        <header class="header fondoHeader">
-            <div class="contenedorLogo">
-                <img class="logo" height="150" src="../assets/img/Logo_mosku_2-removebg-preview.png" alt="Logo barberia con mostacho">
-            </div>
-            <nav class="navegacion">
-                <ul>
-                    <li class="listaItem" ><a class="linkNav" href="../index.html">inicio</a></li>
-                    <li class="listaItem" ><a class="linkNav" href="#">Productos</a></li>
-                    <li class="listaItem" ><a class="linkNav" href="reservas.html">Reservas</a></li>
-                    <li class="listaItem" ><a class="linkNav" href="ubicacion.html">Ubicacion</a></li>
-                    <li class="listaItem" ><a class="linkNav" href="unirse.html">Unirse</a></li>
-                </ul>
-            </nav>
-            <br>
-            <br>
-            <br>
-            <br>
-            <section class="introIndex">
-                <div class="fuenteGrande1 ">
-                    <h1 class="centrar ">MOSKÚ BARBERIA TRADICIONAL</h1>
+    <!--LINK CSS BOOTSTRAP
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <!--LOCAL BOOTSTRAP-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--link cdn para iconos Fontawesome-->
+    <script src="https://kit.fontawesome.com/268dc6ed7a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent h5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../assets/img/Logo_mosku_2-removebg-preview.png" height="75"
+                        alt="Logo Moskú barbería con mostacho"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-2 ">
+                        <li class="nav-item btn btn-secondary">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item btn btn-secondary">
+                            <a class="nav-link active" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item btn btn-secondary">
+                            <a class="nav-link active" href="./reservas.html">Reservas</a>
+                        </li>
+                        <li class="nav-item btn btn-secondary">
+                            <a class="nav-link active" href="./ubicacion.html">Ubicación</a>
+                        </li>
+                        <li class="nav-item btn btn-secondary">
+                            <a class="nav-link active" href="./unirse.html">Unirse</a>
+                        </li>
+                    </ul>
                 </div>
-                <br>
-                <div class=" fuenteMediana">
-                    <h2>Desde 2020</h2>
-                    <br>
-                    <p" class="parrafo1">Nos especializamos en la imagen capilar de cada individuo, destacando sus mas bellos rasgos y haciendo que luzcan un estilo inigualable.
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="#carouselExampleInterval carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="../assets/img/pruebisima-logo-wahl.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="../assets/img/LOGO-BABYLISS-zyro-image (1).jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="../assets/img/pruebisima-teknikpro.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="../assets/img/LOGO-ANDIS-zyro-image.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="../assets/img/pruebisima-kemei.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="../assets/img/LOGO-REVLON-zyro-image.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="../assets/img/LOGO-GAMA-zyro-image.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <section>
+            <div class="h1  d-flex justify-content-center flex-wrap">
+                <h1 class="h1Index ">MOSKÚ BARBERIA TRADICIONAL</h1>
+            </div>
+            <div class="h3  d-flex justify-content-center flex-wrap">
+                <h2 class="h2Index">Desde 2020</h2>
+                <p" class="h4 d-flex justify-content-center flex-wrap text-center h4Index">Nos especializamos en la
+                    imagen capilar de cada individuo, destacando sus mas
+                    bellos rasgos y haciendo que luzcan un estilo inigualable.
                     En simples palabras, como no somos los únicos, decidimos ser los mejores.</p>
-                </div>
-            </section>    
-        </header>
-            <br>        
-            <br>
-        <main  class="fondoMain">
-            <div class="contenedorProductos">
-                <h1>PRODUCTOS</h1>
-                <br>
-                <br>
-                <h2>Consultá y comprá nuestros productos de primera calidad. Un profesional siempre debe equiparse con lo mejor.</h2>
-                <br>
-                <p>
-                    Para nuestros clientes, ofrecemos una gran variedad de productos e insumos de la mas alta calidad. Garantizando el correcto funcionamiento y el mejor de los acabados en tus trabajos.
-                </p>
-                <hr>
             </div>
-            <section class="sectionCards">
-                <div class="card">
-                    <a href="./pages/reservas.html"><img src="./assets/img/IMAGEN CARD RESERVAS.jpg" alt="Reservas"></a>
-                    <h1>
-                        Reservas
-                    </h1>
-                    <p>
-                        No te quedes sin tu turno.
-                    </p>
-                </div>
-                <div class="card">
-                    <a href="./pages/unirse.html"><img src="./assets/img/IMAGEN CARD UNIRSE.jpg" alt="Unirse"></a>
-                    <h1>
-                        Unirse
-                    </h1>
-                    <p>
-                        Suscribite a nuestras noticias.
-                        <br>
-                    </p>
-                </div>
-            </section>    
-        </main>
+        </section>
         <hr>
-        <footer class=" footer fondoFooter centrarFooter fuenteFooter">
-            <p>TODOS LOS DERECHOS RESERVADOS © 
-                - Nicolás A. Cejas G. -</p>
-            <div>
-                <a href="https://www.facebook.com"target="_blank"><i class="iconos fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com"target="_blank"><i class="iconos fa-brands fa-instagram"></i><i></a>
-                <a href="https://www.whatsapp.com"target="_blank"><i class="iconos fa-brands fa-whatsapp"></i></a>
+        <section class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="card estiloCard">
+                        <img src="../assets/img/----PATILLERA_BABYLISS_GOLD_zyro-image.jpg" class="card-img-top"
+                            alt="almanaque de reservas">
+                        <div class="card-body">
+                            <h5 class="card-title">Reservas</h5>
+                            <p class="card-text">Apurate, no te quedes sin tu turno!.
+                            </p>
+                            <a href="https://www.mercadolibre.com.ar/recortadora-babylisspro-goldfx-b787g-dorada-110v220v/p/MLA14942006?pdp_filters=category:MLA5411#searchVariation=MLA14942006&position=1&search_layout=stack&type=product&tracking_id=94fee8f5-d826-4a9c-955e-1c9c9063ecd8"
+                                target="_blank" class="btn btn-dark">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="card estiloCard">
+                        <img src="../assets/img/----WAHL_MAGIC_CLIP_zyro-image.jpg" class="card-img-top"
+                            alt="Mapa de ubicacion ilustrativo">
+                        <div class="card-body">
+                            <h5 class="card-title">Ubicación</h5>
+                            <p class="card-text">No estamos lejos, veni a visitarnos!
+                            </p>
+                            <a href="../pages/ubicacion.html" class="btn btn-primary">Encontranos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="card estiloCard">
+                        <img src="../assets/img/----WAHL_SUPER_TAPER_zyro-image.jpg" class="card-img-top"
+                            alt="Mano con tijera">
+                        <div class="card-body">
+                            <h5 class="card-title">Unirse</h5>
+                            <p class="card-text">Recibi todas nuestras noticias!
+                            </p>
+                            <a href="../pages/unirse.html" class="btn btn-light">Unirme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="card estiloCard">
+                        <img src="../assets/img/----WAHL_PATILLER_DETAILER_zyro-image.jpg" class="card-img-top"
+                            alt="Mano con tijera">
+                        <div class="card-body">
+                            <h5 class="card-title">Unirse</h5>
+                            <p class="card-text">Recibi todas nuestras noticias!
+                            </p>
+                            <a href="./pages/unirse.html" class="btn btn-light">Unirme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="card estiloCard">
+                        <img src="../assets/img/-----SHAVER_ANDIS_zyro-image.jpg" class="card-img-top"
+                            alt="Mano con tijera">
+                        <div class="card-body">
+                            <h5 class="card-title">Unirse</h5>
+                            <p class="card-text">Recibi todas nuestras noticias!
+                            </p>
+                            <a href="./pages/unirse.html" class="btn btn-light">Unirme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="card estiloCard">
+                        <img src="../assets/img/----KIT_BARBERIA_INICIAL_zyro-image.jpg" class="card-img-top"
+                            alt="Mano con tijera">
+                        <div class="card-body">
+                            <h5 class="card-title">Unirse</h5>
+                            <p class="card-text">Recibi todas nuestras noticias!
+                            </p>
+                            <a href="./pages/unirse.html" class="btn btn-light">Unirme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="card estiloCard">
+                        <img src="./assets/img/IMAGEN CARD UNIRSE 3.avif" class="card-img-top" alt="Mano con tijera">
+                        <div class="card-body">
+                            <h5 class="card-title">Unirse</h5>
+                            <p class="card-text">Recibi todas nuestras noticias!
+                            </p>
+                            <a href="./pages/unirse.html" class="btn btn-light">Unirme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="card estiloCard">
+                        <img src="./assets/img/IMAGEN CARD UNIRSE 3.avif" class="card-img-top" alt="Mano con tijera">
+                        <div class="card-body">
+                            <h5 class="card-title">Unirse</h5>
+                            <p class="card-text">Recibi todas nuestras noticias!
+                            </p>
+                            <a href="./pages/unirse.html" class="btn btn-light">Unirme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="card estiloCard">
+                        <img src="./assets/img/IMAGEN CARD UNIRSE 3.avif" class="card-img-top" alt="Mano con tijera">
+                        <div class="card-body">
+                            <h5 class="card-title">Unirse</h5>
+                            <p class="card-text">Recibi todas nuestras noticias!
+                            </p>
+                            <a href="./pages/unirse.html" class="btn btn-light">Unirme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="card estiloCard">
+                        <img src="./assets/img/IMAGEN CARD UNIRSE 3.avif" class="card-img-top" alt="Mano con tijera">
+                        <div class="card-body">
+                            <h5 class="card-title">Unirse</h5>
+                            <p class="card-text">Recibi todas nuestras noticias!
+                            </p>
+                            <a href="./pages/unirse.html" class="btn btn-light">Unirme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="card estiloCard">
+                        <img src="./assets/img/IMAGEN CARD UNIRSE 3.avif" class="card-img-top" alt="Mano con tijera">
+                        <div class="card-body">
+                            <h5 class="card-title">Unirse</h5>
+                            <p class="card-text">Recibi todas nuestras noticias!
+                            </p>
+                            <a href="./pages/unirse.html" class="btn btn-light">Unirme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="card estiloCard">
+                        <img src="./assets/img/IMAGEN CARD UNIRSE 3.avif" class="card-img-top" alt="Mano con tijera">
+                        <div class="card-body">
+                            <h5 class="card-title">Unirse</h5>
+                            <p class="card-text">Recibi todas nuestras noticias!
+                            </p>
+                            <a href="./pages/unirse.html" class="btn btn-light">Unirme</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
-    </body>
+    </main>
+    <hr>
+    <footer class="container-fluid bg-transparent text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="buttonFooter btn text-white btn-floating m-3" style="background-color: #3b5998;"
+                    href="https://www.facebook.com" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="buttonFooter btn text-white btn-floating m-3" style="background-color: #55acee;"
+                    href="https://twitter.com/" target="_blank" role="button"><i class="fab fa-twitter"></i></a>
+
+                <!-- Instagram -->
+                <a class="buttonFooter btn text-white btn-floating m-3" style="background-color: #ac2bac;"
+                    href="https://www.instagram.com/moskubarberia" target="_blank" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- WhatsApp -->
+                <a class="buttonFooter btn text-white btn-floating m-3" style="background-color: #4db937;"
+                    href="https://wa.me/1138639232" target="_blank" role="button"><i class="fab fa-whatsapp"></i></a>
+
+                <!-- Google -->
+                <a class="buttonFooter btn text-white btn-floating m-3" style="background-color: #dd4b39;"
+                    href="https://www.google.com" target="_blank" role="button"><i class="fab fa-google"></i></a>
+
+            </section>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright: Nicolás Agustín Cejas González.
+        </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
 
 </html>
