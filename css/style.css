@@ -85,9 +85,25 @@ body{
 
 .carousel{
     margin-top:4rem;
-    margin-bottom: 6rem;
+    margin-bottom: 5.3rem;
 }
 
-.carouselImage{
-    height: 30%;
+
+
+@media screen and (max-width: 1199px) and (min-width: 0px){
+    .carousel{
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        padding-bottom: 0;
+    }
+}
+
+.tituloYParrafoProductos{
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    text-align: center;
+}
+
+.card{
+    margin-bottom: 1rem;
 }
