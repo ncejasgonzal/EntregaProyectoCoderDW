@@ -1,70 +1,169 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head >
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MoskuBarberiaTradicional</title>
-        <!--link cdn para iconos Fontawesome-->
-        <script src="https://kit.fontawesome.com/268dc6ed7a.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoskúBarberiaTradicional</title>
+    <!--icono favicon-->
+    <link rel="icon" href="../favicon.ico.png" type="image/x-icon">
 
-    <body>
-        <header class="header fondoHeader">
-            <div class="contenedorLogo">
-                <img class="logo" height="150" src="../assets/img/Logo_mosku_2-removebg-preview.png" alt="Logo barberia con mostacho">
+    <!--LINK CSS BOOTSTRAP
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <!--LOCAL BOOTSTRAP-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--link cdn para iconos Fontawesome-->
+    <script src="https://kit.fontawesome.com/268dc6ed7a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent h5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../assets/img/Logo_mosku_2-removebg-preview.png" height="75"
+                        alt="Logo Moskú barbería con mostacho"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-2 ">
+                        <li class="nav-item btn btn-secondary">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item btn btn-secondary">
+                            <a class="nav-link active" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item btn btn-secondary">
+                            <a class="nav-link active" href="./reservas.html">Reservas</a>
+                        </li>
+                        <li class="nav-item btn btn-secondary">
+                            <a class="nav-link active" href="./ubicacion.html">Ubicación</a>
+                        </li>
+                        <li class="nav-item btn btn-secondary">
+                            <a class="nav-link active" href="./unirse.html">Unirse</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <nav class="navegacion">
-                <ul>
-                    <li class="listaItem" ><a class="linkNav" href="../index.html">inicio</a></li>
-                    <li class="listaItem" ><a class="linkNav" href="productos.html">Productos</a></li>
-                    <li class="listaItem" ><a class="linkNav" href="#">Reservas</a></li>
-                    <li class="listaItem" ><a class="linkNav" href="ubicacion.html">Ubicacion</a></li>
-                    <li class="listaItem" ><a class="linkNav" href="unirse.html">Unirse</a></li>
-                </ul>
-            </nav>
-            <br>
-            <br>
-            <br>
-            <br>
-            <section class="introIndex">
-                <div class="fuenteGrande1 ">
-                    <h1 class="centrar ">MOSKÚ BARBERIA TRADICIONAL</h1>
-                </div>
-                <br>
-                <div class=" fuenteMediana">
-                    <h2>Desde 2020</h2>
-                    <br>
-                    <p" class="parrafo1">Nos especializamos en la imagen capilar de cada individuo, destacando sus mas bellos rasgos y haciendo que luzcan un estilo inigualable.
-                    En simples palabras, como no somos los únicos, decidimos ser los mejores.</p>
-                </div>
-            </section>    
-        </header>
-
-        <main class="fondoMain">
-            <h1>
-                Reservas
-            </h1>
-            <h2>
-                Elegí con quien reservar
-            </h2>
-            <h3>
-                Consultar días y horarios disponibles.
-                Los turnos vacantes pueden variar según la demanda.
-            </h3>
-        </main>
-
-        <footer class=" footer fondoFooter centrarFooter fuenteFooter">
-            <p>TODOS LOS DERECHOS RESERVADOS © 
-                - Nicolás A. Cejas G. -</p>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="tituloYParrafoProductos">
+            <div class="h1  d-flex justify-content-center flex-wrap">
+                <h1 class="h1Index ">Realizá tu reserva aquí</h1>
+            </div>
             <div>
-                <a href="https://www.facebook.com"target="_blank"><i class="iconos fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com"target="_blank"><i class="iconos fa-brands fa-instagram"></i><i></a>
-                <a href="https://www.whatsapp.com"target="_blank"><i class="iconos fa-brands fa-whatsapp"></i></a>
+                <Tenemos class="h4 d-flex justify-content-center flex-wrap text-center h4Index">No te quedes sin tu turno, nuestros barberos te estan esperando!</p>
             </div>
-        </footer>
-    </body>
+        </section>
+        <hr>
+        <section class="container seccionCardsReservas">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="card estiloCard">
+                        <img src="../assets/img/----PATILLERA_BABYLISS_GOLD_zyro-image.jpg" class="card-img-top"
+                            alt="almanaque de reservas">
+                        <div class="card-body">
+                            <h5 class="card-title">ENZO</h5>
+                            <p class="card-text">Mosku's barber & colorist</p>
+                            <a href="https://wa.me/1138639232"target="_blank" class="btn btnReserva fab fa-whatsapp">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="card estiloCard">
+                        <img src="../assets/img/----WAHL_MAGIC_CLIP_zyro-image.jpg" class="card-img-top"
+                            alt="Mapa de ubicacion ilustrativo">
+                        <div class="card-body">
+                            <h5 class="card-title">IGNACIO</h5>
+                            <p class="card-text">Mosku's barber & colorist
+                            </p>
+                            <a href="https://wa.me/1138639232"target="_blank" class="btn btnReserva fab fa-whatsapp">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="card estiloCard">
+                        <img src="../assets/img/----WAHL_SUPER_TAPER_zyro-image.jpg" class="card-img-top"
+                            alt="Mano con tijera">
+                        <div class="card-body">
+                            <h5 class="card-title">ALAN</h5>
+                            <p class="card-text">Mosku's barber & colorist
+                            </p>
+                            <a href="https://wa.me/1138639232"target="_blank" class="btn btnReserva fab fa-whatsapp">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="justify-content-center d-flex gap-5">  
+                    <div class="col-sm-12 col-md-12 col-lg-4 ">
+                        <div class="card estiloCard cardReserva">
+                            <img src="../assets/img/----WAHL_PATILLER_DETAILER_zyro-image.jpg"          class="card-img-top"
+                                alt="Mano con tijera">
+                            <div class="card-body">
+                                <h5 class="card-title">SANTI</h5>
+                                <p class="card-text">Mosku's barber
+                                </p>
+                                <a href="https://wa.me/1138639232"target="_blank" class="btn btnReserva fab fa-whatsapp">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4 ">
+                        <div class="card estiloCard cardReserva">
+                            <img src="../assets/img/-----SHAVER_ANDIS_zyro-image.jpg" class="card-img-top"
+                                alt="Mano con tijera">
+                            <div class="card-body">
+                                <h5 class="card-title">YOEL</h5>
+                                <p class="card-text">Mosku's barber
+                                </p>
+                                <a href="https://wa.me/1138639232"target="_blank" class="btn btnReserva fab fa-whatsapp">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+    </main>
+    <hr>
+    <footer class="container-fluid bg-transparent text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="buttonFooter btn text-white btn-floating m-3" style="background-color: #3b5998;"
+                    href="https://www.facebook.com" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="buttonFooter btn text-white btn-floating m-3" style="background-color: #55acee;"
+                    href="https://twitter.com/" target="_blank" role="button"><i class="fab fa-twitter"></i></a>
+
+                <!-- Instagram -->
+                <a class="buttonFooter btn text-white btn-floating m-3" style="background-color: #ac2bac;"
+                    href="https://www.instagram.com/moskubarberia" target="_blank" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- WhatsApp -->
+                <a class="buttonFooter btn text-white btn-floating m-3" style="background-color: #4db937;"
+                    href="https://wa.me/1138639232" target="_blank" role="button"><i class="fab fa-whatsapp"></i></a>
+
+                <!-- Google -->
+                <a class="buttonFooter btn text-white btn-floating m-3" style="background-color: #dd4b39;"
+                    href="https://www.google.com" target="_blank" role="button"><i class="fab fa-google"></i></a>
+
+            </section>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright: Nicolás Agustín Cejas González.
+        </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
 
 </html>
