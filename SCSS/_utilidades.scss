@@ -1,0 +1,32 @@
+.h1Index{
+    color: $color-blanco;        
+}
+
+.h2Index{
+    color: $color-blanco;
+}
+
+.h3Index{
+    color: $color-blanco;
+}
+
+.h4Index{
+    color: $color-blanco;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 0px){
+    .h1Index {
+    font-size: $font-grande-mob;
+    margin: 0;
+    padding: 0;
+    }
+    .h2Index {
+        font-size: $font-mediano-mob;
+        margin: 0;
+        padding: 0;
+        }
+    .h4Index {
+        font-size: $font-pequenio-mob;
+        margin-top: 0.4rem;
+        }
+}

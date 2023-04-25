@@ -1,0 +1,25 @@
+.carousel{
+    margin-top:4rem;
+    margin-bottom: 5.3rem;
+.tituloYParrafoProductos{
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    text-align: $centrar;
+    .card{
+        margin-bottom: $margin-b1;
+    }
+}
+}
+
+
+
+@media screen and (max-width: 1199px) and (min-width: 0px){
+    .carousel{
+        margin-bottom: $margin-b1;
+        margin-top: 1rem;
+        padding-bottom: 0;
+    }
+}
+
+
+

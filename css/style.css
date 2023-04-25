@@ -1,126 +1,139 @@
-/*import de fuentes*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,500;1,700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,500;1,700&display=swap");
+
+/*maps*/
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
 
-body{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../assets/img/Fondomosku.jpg);
+.h1Index {
+    color: white;
+}
+
+.h2Index {
+    color: white;
+}
+
+.h3Index {
+    color: white;
+}
+
+.h4Index {
+    color: white;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 0px) {
+    .h1Index {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .h2Index {
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .h4Index {
+        font-size: 1rem;
+        margin-top: 0.4rem;
+    }
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Fondomosku.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    color: aliceblue;
-    font-family: 'Open Sans' , sans-serif;
-    
+    color: white;
+    font-family: "Open Sans", sans-serif;
 }
 
-@media screen and (max-width: 1199px) and (min-width: 0px){
-    .h1Index {
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 0;
-    }
-}
-
-@media screen and (max-width: 1199px) and (min-width: 0px){
-    .h2Index {
-    font-size: 1.2rem;
-    margin: 0;
-    padding: 0;
-    }
-}
-
-@media screen and (max-width: 1199px) and (min-width: 0px){
-    .h4Index {
-    font-size: 1rem;
-    margin-top: 0.4rem;
-    }
-}
-
-
-.parrafoIndex{
-    margin: 1rem;
-}
-
-
-.estiloCard{
+.estiloCard {
     background-color: rgba(126, 117, 117, 0.555);
-    font-family: 'Open Sans' , sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 100;
 }
 
-
-@media screen and (max-width: 1199px) and (min-width: 0px){
-    .estiloCard {
-    margin-top: 0.8rem;
-    }
-}
-
-.card-img-top{
+.estiloCard .card-img-top {
     width: 100%;
     height: 60%;
     object-fit: cover;
 }
 
-
-/*
-.card{
-    position: relative;
+.estiloCard .btnNegro,
+.estiloCard .btnBlanco,
+.estiloCard .btnAzul {
     display: inline-block;
-    flex-direction: row;
-    
-}*/
+    border-radius: 0.25rem;
+    color: aliceblue;
+    background-color: black;
+}
 
-.cardTexto{
+.estiloCard .btnAzul {
+    background-color: rgb(35, 104, 207);
+}
+
+.estiloCard .btnBlanco {
+    background-color: white;
     color: black;
 }
 
-.contenedorVideo{
+@media screen and (max-width: 1199px) and (min-width: 0px) {
+    .estiloCard {
+        margin-top: 0.8rem;
+    }
+}
+
+.contenedorVideo {
     margin-top: 2rem;
 }
 
-/*------------------------------- HASTA ACÁ LLEGA EL ESTILADO DEL INDEX-------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------- COMIENZA ESTILADO DE "PRODUCTOS"-------------------------------*/
-
-.carousel{
-    margin-top:4rem;
+.carousel {
+    margin-top: 4rem;
     margin-bottom: 5.3rem;
 }
 
+.carousel .tituloYParrafoProductos {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    text-align: center;
+}
 
+.carousel .tituloYParrafoProductos .card {
+    margin-bottom: 1rem;
+}
 
-@media screen and (max-width: 1199px) and (min-width: 0px){
-    .carousel{
+@media screen and (max-width: 1199px) and (min-width: 0px) {
+    .carousel {
         margin-bottom: 1rem;
         margin-top: 1rem;
         padding-bottom: 0;
     }
 }
 
-.tituloYParrafoProductos{
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    text-align: center;
+.seccionCardsReservas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.card{
-    margin-bottom: 1rem;
+.seccionCardsReservas .imagenReserva {
+    height: 20rem;
 }
 
-/*------------------------------- HASTA ACÁ LLEGA EL ESTILADO DE PRODUCTOS-------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------COMIENZA ESTILADO DE "RESERVAS"---------------------------------*/
-
-.seccionCardsReservas{
-    margin-top: 3rem;
+.seccionCardsReservas .btnReserva {
+    background-color: rgba(130, 250, 106, 0.6980392157);
 }
 
-@media screen and (max-width: 1199px) and (min-width: 0px){
-    .estiloCardReservas{
+@media screen and (max-width: 1199px) and (min-width: 0px) {
+    .estiloCardReservas {
         width: 20rem;
         height: 20rem;
         flex-wrap: wrap;
@@ -130,10 +143,8 @@ body{
         padding-bottom: 10rem;
         padding-top: 0;
     }
-}
 
-@media screen and (max-width: 1199px) and (min-width: 0px){
-    .estiloCardReservas2{
+    .estiloCardReservas2 {
         width: 19rem;
         height: 20rem;
         padding-right: 0.5rem;
@@ -142,10 +153,24 @@ body{
     }
 }
 
-.imagenReserva{
-    height: 20rem;
+.face {
+    background-color: #3b5998;
 }
 
-.btnReserva{
-    background-color: #82fa6ab2;
+.twitter {
+    background-color: #55acee;
 }
+
+.ig {
+    background-color: #ac2bac;
+}
+
+.wsp {
+    background-color: #4db937;
+}
+
+.google {
+    background-color: #dd4b39;
+}
+
+/*# sourceMappingURL=style.css.map */

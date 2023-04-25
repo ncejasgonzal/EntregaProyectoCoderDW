@@ -1,0 +1,10 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../assets/img/Fondomosku.jpg);
+    background-position: $centrar $centrar;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: $color-blanco;
+    font-family: $fuente-principal;
+    
+}
