@@ -53,6 +53,10 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+.logo {
+    border-radius: 50%;
+}
+
 .estiloCard {
     background-color: rgba(126, 117, 117, 0.555);
     font-family: "Open Sans", sans-serif;
