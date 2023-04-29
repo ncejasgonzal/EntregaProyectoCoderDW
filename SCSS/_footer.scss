@@ -1,17 +1,27 @@
-.face{
-    background-color: map-get($redes, face);
-}
-.twitter{
-    background-color: map-get($redes , twitter )
-}
-.ig{
-    background-color: map-get($redes, ig )
-}
-.wsp{
-    background-color: map-get($redes , wsp );
-}
-.google{
-    background-color: map-get($redes, google );
+footer{
+    div{
+        section{
+            .face{
+                background-color: map-get($redes, face);
+            }
+            .twitter{
+                background-color: map-get($redes , twitter )
+            }
+            .ig{
+                background-color: map-get($redes, ig )
+            }
+            .wsp{
+                background-color: map-get($redes , wsp );
+            }
+            .google{
+                background-color: map-get($redes, google );
+            }
+        }
+    }
+    .infoFooter{
+        background-color: rgba(0, 0, 0, 0.2);
+        padding-bottom: 1rem;
+    }        
 }
 
 

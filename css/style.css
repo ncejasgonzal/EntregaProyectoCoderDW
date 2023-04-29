@@ -51,11 +51,10 @@ body {
   font-family: "cinzel";
 }
 
-.logo {
+header nav div .logo {
   border-radius: 50%;
 }
-
-.animacionLogo {
+header nav div .animacionLogo {
   animation-duration: 5s;
   animation-name: animLogo;
   animation-iteration-count: infinite;
@@ -75,61 +74,107 @@ body {
     transform: rotateY(360deg);
   }
 }
-.estiloCard {
+.MainIndex .TituloMianIndex {
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+}
+.MainIndex .sectionCardIndex .divCardsIndex .columnasCard .estiloCard {
   background-color: rgba(126, 117, 117, 0.555);
   font-family: "cinzel";
   font-weight: 100;
+  margin-bottom: 3rem;
 }
-.estiloCard .card-img-top {
+.MainIndex .sectionCardIndex .divCardsIndex .columnasCard .estiloCard .card-img-top {
   width: 100%;
   height: 60%;
   object-fit: cover;
 }
-.estiloCard .btnNegro, .estiloCard .btnBlanco, .estiloCard .btnAzul {
+.MainIndex .sectionCardIndex .divCardsIndex .columnasCard .estiloCard .cuerpoCardIndex .btnNegro, .MainIndex .sectionCardIndex .divCardsIndex .columnasCard .estiloCard .cuerpoCardIndex .btnBlanco, .MainIndex .sectionCardIndex .divCardsIndex .columnasCard .estiloCard .cuerpoCardIndex .btnAzul {
   display: inline-block;
   border-radius: 0.25rem;
   color: aliceblue;
   background-color: black;
 }
-.estiloCard .btnAzul {
+.MainIndex .sectionCardIndex .divCardsIndex .columnasCard .estiloCard .cuerpoCardIndex .btnAzul {
   background-color: rgb(35, 104, 207);
 }
-.estiloCard .btnBlanco {
+.MainIndex .sectionCardIndex .divCardsIndex .columnasCard .estiloCard .cuerpoCardIndex .btnBlanco {
   background-color: white;
   color: black;
 }
 
 @media screen and (max-width: 1199px) and (min-width: 0px) {
-  .estiloCard {
+  .MainIndex .sectionCardIndex .divCardsIndex .columnasCard .estiloCard {
     margin-top: 0.8rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
   }
 }
+
 .contenedorVideo {
   margin-top: 2rem;
 }
 
-.carousel {
+.mainProductos .carousel {
   margin-top: 4rem;
-  margin-bottom: 5.3rem;
+  margin-bottom: 2rem;
+  width: 70%;
+  display: flex;
+  margin-left: 15%;
 }
-.carousel .tituloYParrafoProductos {
+.mainProductos .tituloYParrafoProductos {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   text-align: center;
 }
-
-.card {
-  margin-bottom: 2rem;
+.mainProductos .sectionCardsProductos .estiloCard {
+  background-color: rgba(126, 117, 117, 0.555);
+  font-family: "cinzel";
+  font-weight: 100;
+  margin-bottom: 3rem;
   margin-top: 4rem;
+}
+.mainProductos .sectionCardsProductos .estiloCard .card-img-top {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+.mainProductos .sectionCardsProductos .estiloCard .btnNegro, .mainProductos .sectionCardsProductos .estiloCard .btnBlanco, .mainProductos .sectionCardsProductos .estiloCard .btnAzul, .mainProductos .sectionCardsProductos .MainIndex .sectionCardIndex .divCardsIndex .columnasCard .estiloCard .cuerpoCardIndex .btnAzul, .MainIndex .sectionCardIndex .divCardsIndex .columnasCard .mainProductos .sectionCardsProductos .estiloCard .cuerpoCardIndex .btnAzul, .mainProductos .sectionCardsProductos .MainIndex .sectionCardIndex .divCardsIndex .columnasCard .estiloCard .cuerpoCardIndex .btnBlanco, .MainIndex .sectionCardIndex .divCardsIndex .columnasCard .mainProductos .sectionCardsProductos .estiloCard .cuerpoCardIndex .btnBlanco {
+  display: inline-block;
+  border-radius: 0.25rem;
+  color: aliceblue;
+  background-color: black;
+}
+.mainProductos .sectionCardsProductos .estiloCard .btnAzul {
+  background-color: rgb(35, 104, 207);
+}
+.mainProductos .sectionCardsProductos .estiloCard .btnBlanco {
+  background-color: white;
+  color: black;
 }
 
 @media screen and (max-width: 1199px) and (min-width: 0px) {
-  .carousel {
+  .mainProductos .carousel {
     margin-bottom: 1rem;
     margin-top: 1rem;
     padding-bottom: 0;
   }
+  .mainProductos .tituloYParrafoProductos {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    text-align: center;
+  }
+  .mainProductos .sectionCardsProductos .estiloCard {
+    margin-top: 0.8rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+  }
 }
+
 .seccionCardsReservas {
   display: flex;
   justify-content: center;
@@ -142,6 +187,19 @@ body {
 }
 .seccionCardsReservas .btnReserva {
   background-color: rgba(130, 250, 106, 0.6980392157);
+}
+
+.estiloCard {
+  background-color: rgba(126, 117, 117, 0.555);
+  font-family: "cinzel";
+  font-weight: 100;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+.estiloCard .card-img-top {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1199px) and (min-width: 0px) {
@@ -163,24 +221,24 @@ body {
     gap: none;
   }
 }
-.face {
+footer div section .face {
   background-color: #3b5998;
 }
-
-.twitter {
+footer div section .twitter {
   background-color: #55acee;
 }
-
-.ig {
+footer div section .ig {
   background-color: #ac2bac;
 }
-
-.wsp {
+footer div section .wsp {
   background-color: #4db937;
 }
-
-.google {
+footer div section .google {
   background-color: #dd4b39;
+}
+footer .infoFooter {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

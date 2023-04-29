@@ -1,12 +1,18 @@
-.logo {
-    border-radius: 50%;
+header{
+    nav{
+        div{
+            .logo {
+                border-radius: 50%;
+            }
+            .animacionLogo {
+                animation-duration: 5s;
+                animation-name: animLogo;
+                animation-iteration-count: infinite;
+                }
+        }
+    }
 }
 
-.animacionLogo {
-    animation-duration: 5s;
-    animation-name: animLogo;
-    animation-iteration-count: infinite;
-}
 @keyframes animLogo{
     from {
         -webkit-transform: rotate(0deg);

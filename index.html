@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moskú | Incio</title>
+    <!--META DESCRIPTION Y META KEYWORDS-->
+    <meta name="description" content="Moskú Barberia, encontra a los mejores barberos en un solo lugar. Cambiá tu estili y tu vida">
+    <meta name="keywords" content="Barbería, Peluquería, barberos, colorista, teñir, corte de pelo, barba, estilo de barba, cortes, degradé, low fade, high fade, mid fade, tapper fade, moikano, cresta, precio, calidad">
     <!--icono favicon-->
     <link rel="icon" href="favicon.ico.png" type="image/x-icon">
-
     <!--LINK CSS BOOTSTRAP
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
@@ -17,10 +18,11 @@
     <link rel="stylesheet" href="./css/style.css">
     <!--link cdn para iconos Fontawesome-->
     <script src="https://kit.fontawesome.com/268dc6ed7a.js" crossorigin="anonymous"></script>
+    <title>Moskú | Incio</title>
 </head>
 
 <body>
-    <header class="container-fluid">
+    <header class="container-fluid header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent h5">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img class="logo animacionLogo" src="./assets/img/Logo_mosku_2-removebg-preview.png" height="75"
@@ -51,9 +53,8 @@
             </div>
         </nav>
     </header>
-
-    <main class="container">
-        <section>
+    <main class="container MainIndex">
+        <section class="TituloMianIndex">
             <div class="h1  d-flex justify-content-center flex-wrap">
                 <h1 class="h1Index ">MOSKÚ BARBERIA TRADICIONAL</h1>
             </div>
@@ -66,37 +67,37 @@
             </div>
         </section>
         <hr>
-        <section class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-4">
+        <section class="container sectionCardIndex">
+            <div class="row divCardsIndex">
+                <div class="columnasCard col-sm-12 col-md-12 col-lg-4">
                     <div class="card estiloCard">
                         <img src="./assets/img/IMAGEN CARD RESERVAS.jpg" class="card-img-top"
                             alt="almanaque de reservas">
-                        <div class="card-body">
-                            <h5 class="card-title">Reservas</h5>
+                        <div class="card-body cuerpoCardIndex">
+                            <h2 class="card-title h4Index">Reservas</h2>
                             <p class="card-text">Apurate, no te quedes sin tu turno!.
                             </p>
                             <a href="./pages/reservas.html" class="btn btnNegro">Reserva aqui</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="columnasCard col-sm-12 col-md-12 col-lg-4">
                     <div class="card estiloCard">
                         <img src="./assets/img/IMAGEN CARD UBICACION 1.avif" class="card-img-top"
                             alt="Mapa de ubicacion ilustrativo">
                         <div class="card-body">
-                            <h5 class="card-title">Ubicación</h5>
+                            <h2 class="card-title h4Index">Ubicación</h2>
                             <p class="card-text">No estamos lejos, veni a visitarnos!
                             </p>
                             <a href="./pages/ubicacion.html" class="btn btnAzul">Encontranos</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="columnasCard col-sm-12 col-md-12 col-lg-4">
                     <div class="card estiloCard">
                         <img src="./assets/img/IMAGEN CARD UNIRSE 3.avif" class="card-img-top" alt="Mano con tijera">
                         <div class="card-body">
-                            <h5 class="card-title">Unirse</h5>
+                            <h2 class="card-title h4Index">Unirse</h2>
                             <p class="card-text">Recibi todas nuestras noticias!
                             </p>
                             <a href="./pages/unirse.html" class="btn btnBlanco">Unirme</a>
@@ -109,49 +110,10 @@
                     allowfullscreen></iframe>
             </div>
             <hr>
-
-            <!--<div class="card-group">
-                <div class="card ">
-                    <a class="decoracionCard" href="./pages/reservas.html">
-                        <img src="./assets/img/IMAGEN CARD RESERVAS.jpg" class="card-img-top" alt="almanaque reservas">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural   lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card ">
-                    <a class="decoracionCard" href="./pages/ubicacion.html">
-                        <img src="./assets/img/IMAGEN CARD UBICACION 1.avif" class="card-img-top" alt="almanaque reservas">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural   lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        </div>
-                    </a>
-                </div>
-                
-                
-                <div class="card ">
-                    <a class="decoracionCard" href="./pages/ubicacion.html">
-                        <img src="./assets/img/IMAGEN CARD UNIRSE 3.avif" class="card-img-top" alt="almanaque reservas">
-                    
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural   lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        </div>
-                    </a>
-                </div>
-                
-            </div>-->
         </section>
     </main>
     <footer class="container-fluid bg-transparent text-center text-white">
-        <!-- Grid container -->
         <div class="container p-4 pb-0">
-            <!-- Section: Social media -->
             <section class="mb-4">
                 <!-- Facebook -->
                 <a class="buttonFooter btn text-white btn-floating m-3 face"
@@ -172,31 +134,20 @@
 
                 <!-- Google -->
                 <a class="buttonFooter btn text-white btn-floating m-3 google"
-                    href="https://www.google.com" target="_blank" role="button"><i class="fab fa-google"></i></a>
-
-
+                    href="https://www.gmail.com" target="_blank" role="button"><i class="fab fa-google"></i></a>
             </section>
         </div>
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2023 Copyright: Nicolás Agustín Cejas González.
-        </div>
-    </footer>
-
-    <!--
-            <div class="contenedorIconos col-md-12">
-                <a href="https://www.facebook.com" target="_blank"><i class="iconos fa-brands fa-facebook fa-shake"></i></a>
-                <a href="https://www.instagram.com" target="_blank"><i
-                    class="iconos fa-brands fa-instagram fa-shake"></i></a>
-                <a href="https://www.whatsapp.com" target="_blank"><i class="iconos fa-brands fa-whatsapp fa-shake"></i></a>
+        <div class="text-center infoFooter">
+            <div>
+                <a href="https://www.gmail.com" target="_blank">
+                    moskubarberia2020@gmail.com
+                </a>    
             </div>
-            <div class="parrafosFooter col-12 ">
-                <p class="parrafoFooter1">Contactate con nosotros Moskubarberia2020@gmail.com</p>
-                <p class="parrafoFooter2">TODOS LOS DERECHOS RESERVADOS ©
-                - Nicolás A. Cejas G. -</p>
+            <!-- Copyright -->
+            <div>
+                © 2023 Copyright: Nicolás Agustín Cejas González.
             </div>
         </div>
-        
     </footer>
     <!--LINK JS BOOTSTRAP
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

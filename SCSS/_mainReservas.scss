@@ -10,6 +10,19 @@
     
 }
 
+.estiloCard{
+    background-color: rgba(126, 117, 117, 0.555);
+    font-family: $fuente-principal;
+    font-weight: 100;
+    margin-bottom: $margin-b3;
+    margin-top: 1rem;
+    .card-img-top{
+        width:$ancho-100;
+        height: 60%;
+        object-fit: cover;
+    }
+}
+
 @media screen and (max-width: 1199px) and (min-width: 0px){
     .estiloCardReservas{
         width: 20rem;
