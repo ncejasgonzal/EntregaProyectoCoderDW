@@ -4,15 +4,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "cinzel";
 }
 
 .h1Index {
   color: white;
+  font-size: 2rem;
 }
 
 .h2Index {
   color: white;
+  font-size: 1.7rem;
 }
 
 .h3Index {
@@ -21,6 +22,7 @@
 
 .h4Index {
   color: white;
+  font-size: 1.3rem;
 }
 
 @media screen and (max-width: 1199px) and (min-width: 0px) {
@@ -40,7 +42,7 @@
   }
 }
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Fondomosku.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Fondomoskuredim2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -115,8 +117,10 @@ body {
   -webkit-backdrop-filter: blur(12px);
   text-align: center;
 }
-.carousel .tituloYParrafoProductos .card {
-  margin-bottom: 1rem;
+
+.card {
+  margin-bottom: 2rem;
+  margin-top: 4rem;
 }
 
 @media screen and (max-width: 1199px) and (min-width: 0px) {

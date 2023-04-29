@@ -1,9 +1,11 @@
 .h1Index{
-    color: $color-blanco;        
+    color: $color-blanco;
+    font-size: 2rem;
 }
 
 .h2Index{
     color: $color-blanco;
+    font-size: 1.7rem;
 }
 
 .h3Index{
@@ -12,6 +14,7 @@
 
 .h4Index{
     color: $color-blanco;
+    font-size: 1.3rem;
 }
 
 @media screen and (max-width: 1199px) and (min-width: 0px){

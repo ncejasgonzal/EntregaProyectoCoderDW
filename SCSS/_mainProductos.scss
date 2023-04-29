@@ -5,10 +5,12 @@
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     text-align: $centrar;
-    .card{
-        margin-bottom: $margin-b1;
     }
 }
+
+.card{
+    margin-bottom: $margin-b2;
+    margin-top: 4rem;
 }
 
 
