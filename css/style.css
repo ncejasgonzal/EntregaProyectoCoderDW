@@ -42,7 +42,7 @@
   }
 }
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Fondomoskuredim2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Fondomosku1920px.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -51,6 +51,16 @@ body {
   font-family: "cinzel";
 }
 
+@media screen and (max-width: 1280px) and (min-width: 721px) {
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Fondomosku1280px.jpg);
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 0px) {
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Fondomosku720px.jpg);
+  }
+}
 header nav div .logo {
   border-radius: 50%;
 }
@@ -76,7 +86,7 @@ header nav div .animacionLogo {
 }
 .MainIndex .TituloMianIndex {
   margin-top: 8rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 .MainIndex .sectionCardIndex .divCardsIndex .columnasCard .estiloCard {
   background-color: rgba(126, 117, 117, 0.555);
@@ -106,10 +116,10 @@ header nav div .animacionLogo {
 @media screen and (max-width: 1199px) and (min-width: 0px) {
   .MainIndex .sectionCardIndex .divCardsIndex .columnasCard .estiloCard {
     margin-top: 0.8rem;
-    width: 80%;
+    width: 70%;
     display: flex;
     justify-content: center;
-    margin-left: 10%;
+    margin-left: 15%;
   }
 }
 

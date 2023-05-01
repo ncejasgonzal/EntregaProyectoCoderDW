@@ -1,7 +1,7 @@
 .MainIndex{
     .TituloMianIndex{
         margin-top: 8rem;
-        margin-bottom: 5rem;
+        margin-bottom: 10rem;
     }
     .sectionCardIndex{
         .divCardsIndex{
@@ -23,7 +23,6 @@
                             color: aliceblue;
                             background-color: black;
                         }
-                    
                         .btnAzul{
                             @extend .btnNegro;
                             background-color: rgb(35, 104, 207);
@@ -47,10 +46,10 @@
                 @media screen and (max-width: 1199px) and (min-width: 0px){
                     .estiloCard {
                         margin-top: 0.8rem;
-                        width: 80%;
+                        width: 70%;
                         display: flex;
                         justify-content: center;
-                        margin-left: 10%;
+                        margin-left: 15%;
                     }
                 }
             }
