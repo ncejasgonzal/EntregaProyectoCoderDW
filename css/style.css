@@ -211,6 +211,9 @@ main .seccionCardsReservas .estiloCard .btnReserva {
 }
 
 @media screen and (max-width: 1199px) and (min-width: 0px) {
+  main .tituloReservas {
+    margin: 4rem;
+  }
   main .estiloCardReservas {
     width: 20rem;
     height: 20rem;
@@ -252,6 +255,12 @@ main .formUnirse .botonEnviar, main .formUnirse .botonLimpiar {
 }
 main .formUnirse .botonLimpiar {
   background-color: rgba(235, 72, 72, 0.63);
+}
+
+@media screen and (max-width: 1199px) and (min-width: 0px) {
+  main .tituloUnirse {
+    margin: 3.5rem;
+  }
 }
 
 footer div section .face {

@@ -26,6 +26,9 @@ main{
 }
 main{
     @media screen and (max-width: 1199px) and (min-width: 0px){
+        .tituloReservas{
+            margin: 4rem;
+        }
         .estiloCardReservas{
             width: 20rem;
             height: 20rem;
