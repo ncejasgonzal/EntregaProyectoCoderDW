@@ -33,11 +33,6 @@
                 @extend .btnNegro;
                 background-color: rgb(35, 104, 207);
             }
-            .btnBlanco{
-                @extend .btnNegro;
-                background-color: white;
-                color: black;
-            }
         }
     }
 }
