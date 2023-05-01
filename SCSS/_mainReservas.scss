@@ -1,4 +1,7 @@
 main{
+    .tituloReservas{
+        margin: 8rem;
+    }
     .seccionCardsReservas{
         @include flexbox(center,wrap,column,$gap-1);
         .estiloCard{

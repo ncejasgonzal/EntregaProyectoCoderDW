@@ -181,6 +181,9 @@ header nav div .animacionLogo {
   }
 }
 
+main .tituloReservas {
+  margin: 8rem;
+}
 main .seccionCardsReservas {
   display: flex;
   justify-content: center;
