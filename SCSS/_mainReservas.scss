@@ -1,46 +1,45 @@
-.seccionCardsReservas{
-    @include flexbox(center,wrap,column,$gap-1);
-
-    .imagenReserva{
-        height: 20rem;
-    }   
-    .btnReserva{
-        background-color: #82fa6ab2;
-    }
-    
-}
-
-.estiloCard{
-    background-color: rgba(126, 117, 117, 0.555);
-    font-family: $fuente-principal;
-    font-weight: 100;
-    margin-bottom: $margin-b3;
-    margin-top: 1rem;
-    .card-img-top{
-        width:$ancho-100;
-        height: 60%;
-        object-fit: cover;
-    }
-}
-
-@media screen and (max-width: 1199px) and (min-width: 0px){
-    .estiloCardReservas{
-        width: 20rem;
-        height: 20rem;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-bottom: 10rem;
-        margin-left: 4rem;
-        padding-bottom: 10rem;
-        padding-top: 0;
-    }
-    .estiloCardReservas2{
-        width: 19rem;
-        height: 20rem;
-        padding-right: 0.5rem;
-        margin-bottom: 10rem;
-        gap: none;
+main{
+    .seccionCardsReservas{
+        @include flexbox(center,wrap,column,$gap-1);
+        .estiloCard{
+            background-color: rgba(126, 117, 117, 0.555);
+            font-family: $fuente-principal;
+            font-weight: 100;
+            margin-bottom: $margin-b3;
+            margin-top: 1rem;
+            .imagenReserva{
+                height: 20rem;
+            }
+            .card-img-top{
+                width:$ancho-100;
+                height: 60%;
+                object-fit: cover;
+            }
+            .btnReserva{
+                background-color: #82fa6ab2;
+            }
+        }
     }
 }
-
+main{
+    @media screen and (max-width: 1199px) and (min-width: 0px){
+        .estiloCardReservas{
+            width: 20rem;
+            height: 20rem;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 10rem;
+            margin-left: 4rem;
+            padding-bottom: 10rem;
+            padding-top: 0;
+        }
+        .estiloCardReservas2{
+            width: 19rem;
+            height: 20rem;
+            padding-right: 0.5rem;
+            margin-bottom: 10rem;
+            gap: none;
+        }
+    }
+}
 
