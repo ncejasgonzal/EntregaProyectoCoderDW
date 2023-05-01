@@ -9,6 +9,7 @@ main{
             border: 0px;
             border-radius:0.25rem;
             padding: 0.5rem;
+            font-weight: bold;
         }
         .botonLimpiar{
             @extend .botonEnviar;
