@@ -1,0 +1,18 @@
+main{
+    .tituloUnirse{
+        margin: 5rem;
+    }
+    .formUnirse{
+        margin-bottom: 4rem;
+        .botonEnviar{
+            background-color: rgba(37, 240, 37, 0.63);
+            border: 0px;
+            border-radius:0.25rem;
+            padding: 0.5rem;
+        }
+        .botonLimpiar{
+            @extend .botonEnviar;
+            background-color: rgba(235, 72, 72, 0.63);
+        }
+    }
+}

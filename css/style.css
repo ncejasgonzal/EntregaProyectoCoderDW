@@ -151,7 +151,7 @@ header nav div .animacionLogo {
   height: 60%;
   object-fit: cover;
 }
-.mainProductos .sectionCardsProductos .estiloCard .btnNegro, .mainProductos .sectionCardsProductos .estiloCard .btnBlanco, .mainProductos .sectionCardsProductos .estiloCard .btnAzul, .mainProductos .sectionCardsProductos .MainIndex .sectionCardIndex .divCardsIndex .columnasCard .estiloCard .cuerpoCardIndex .btnAzul, .MainIndex .sectionCardIndex .divCardsIndex .columnasCard .mainProductos .sectionCardsProductos .estiloCard .cuerpoCardIndex .btnAzul, .mainProductos .sectionCardsProductos .MainIndex .sectionCardIndex .divCardsIndex .columnasCard .estiloCard .cuerpoCardIndex .btnBlanco, .MainIndex .sectionCardIndex .divCardsIndex .columnasCard .mainProductos .sectionCardsProductos .estiloCard .cuerpoCardIndex .btnBlanco {
+.mainProductos .sectionCardsProductos .estiloCard .btnNegro, .mainProductos .sectionCardsProductos .estiloCard .btnAzul, .mainProductos .sectionCardsProductos .MainIndex .sectionCardIndex .divCardsIndex .columnasCard .estiloCard .cuerpoCardIndex .btnAzul, .MainIndex .sectionCardIndex .divCardsIndex .columnasCard .mainProductos .sectionCardsProductos .estiloCard .cuerpoCardIndex .btnAzul, .mainProductos .sectionCardsProductos .MainIndex .sectionCardIndex .divCardsIndex .columnasCard .estiloCard .cuerpoCardIndex .btnBlanco, .MainIndex .sectionCardIndex .divCardsIndex .columnasCard .mainProductos .sectionCardsProductos .estiloCard .cuerpoCardIndex .btnBlanco {
   display: inline-block;
   border-radius: 0.25rem;
   color: aliceblue;
@@ -159,10 +159,6 @@ header nav div .animacionLogo {
 }
 .mainProductos .sectionCardsProductos .estiloCard .btnAzul {
   background-color: rgb(35, 104, 207);
-}
-.mainProductos .sectionCardsProductos .estiloCard .btnBlanco {
-  background-color: white;
-  color: black;
 }
 
 @media screen and (max-width: 1199px) and (min-width: 0px) {
@@ -229,6 +225,29 @@ main .seccionCardsReservas .estiloCard .btnReserva {
     margin-bottom: 10rem;
     gap: none;
   }
+}
+
+main .tituloUbicacion {
+  margin: 8rem;
+}
+main .videoUbicacion {
+  margin-bottom: 8rem;
+}
+
+main .tituloUnirse {
+  margin: 5rem;
+}
+main .formUnirse {
+  margin-bottom: 4rem;
+}
+main .formUnirse .botonEnviar, main .formUnirse .botonLimpiar {
+  background-color: rgba(37, 240, 37, 0.63);
+  border: 0px;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+main .formUnirse .botonLimpiar {
+  background-color: rgba(235, 72, 72, 0.63);
 }
 
 footer div section .face {
