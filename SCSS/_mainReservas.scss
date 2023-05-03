@@ -1,6 +1,7 @@
 main{
     .tituloReservas{
         margin: 8rem;
+        margin-bottom: 15rem;
     }
     .seccionCardsReservas{
         @include flexbox(center,wrap,column,$gap-1);
@@ -10,8 +11,10 @@ main{
             font-weight: 100;
             margin-bottom: $margin-b3;
             margin-top: 1rem;
+            padding: 2.5rem;
+            padding-top: 1rem;
             .imagenReserva{
-                height: 20rem;
+                height: 25rem;
             }
             .card-img-top{
                 width:$ancho-100;
@@ -28,24 +31,48 @@ main{
     @media screen and (max-width: 1199px) and (min-width: 0px){
         .tituloReservas{
             margin: 4rem;
-        }
-        .estiloCardReservas{
-            width: 20rem;
-            height: 20rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
-            justify-content: space-around;
-            margin-bottom: 10rem;
-            margin-left: 4rem;
-            padding-bottom: 10rem;
-            padding-top: 0;
         }
-        .estiloCardReservas2{
-            width: 19rem;
-            height: 20rem;
-            padding-right: 0.5rem;
-            margin-bottom: 10rem;
-            gap: none;
+        .seccionCardsReservas{
+            margin-top: 10rem;
+            .estiloCardReservas{
+                width: 20rem;
+                height: 20rem;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin-bottom: 12rem;
+                margin-left: 7rem;
+                padding-bottom: 10rem;
+                padding-top: 0;
+                .estiloCard{
+                    padding: 0;
+                    width: 15rem;
+                    .imagenReserva{
+                        height: 20rem;
+                    }
+                }
+            }
+            .estiloCardReservas2{
+                width: 19rem;
+                height: 20rem;
+                padding-right: 0.5rem;
+                margin-bottom: 10rem;
+                margin-left: 5.8rem;
+                gap: none;
+                .estiloCard{
+                    padding: 0;
+                    width: 15rem;
+                    .imagenReserva{
+                        height: 20rem;
+                    }
+                }
+            }
         }
+        
     }
 }
+
 

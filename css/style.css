@@ -183,6 +183,7 @@ header nav div .animacionLogo {
 
 main .tituloReservas {
   margin: 8rem;
+  margin-bottom: 15rem;
 }
 main .seccionCardsReservas {
   display: flex;
@@ -197,9 +198,11 @@ main .seccionCardsReservas .estiloCard {
   font-weight: 100;
   margin-bottom: 3rem;
   margin-top: 1rem;
+  padding: 2.5rem;
+  padding-top: 1rem;
 }
 main .seccionCardsReservas .estiloCard .imagenReserva {
-  height: 20rem;
+  height: 25rem;
 }
 main .seccionCardsReservas .estiloCard .card-img-top {
   width: 100%;
@@ -213,23 +216,45 @@ main .seccionCardsReservas .estiloCard .btnReserva {
 @media screen and (max-width: 1199px) and (min-width: 0px) {
   main .tituloReservas {
     margin: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
-  main .estiloCardReservas {
+  main .seccionCardsReservas {
+    margin-top: 10rem;
+  }
+  main .seccionCardsReservas .estiloCardReservas {
     width: 20rem;
     height: 20rem;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 10rem;
-    margin-left: 4rem;
+    margin-bottom: 12rem;
+    margin-left: 7rem;
     padding-bottom: 10rem;
     padding-top: 0;
   }
-  main .estiloCardReservas2 {
+  main .seccionCardsReservas .estiloCardReservas .estiloCard {
+    padding: 0;
+    width: 15rem;
+  }
+  main .seccionCardsReservas .estiloCardReservas .estiloCard .imagenReserva {
+    height: 20rem;
+  }
+  main .seccionCardsReservas .estiloCardReservas2 {
     width: 19rem;
     height: 20rem;
     padding-right: 0.5rem;
     margin-bottom: 10rem;
+    margin-left: 5.8rem;
     gap: none;
+  }
+  main .seccionCardsReservas .estiloCardReservas2 .estiloCard {
+    padding: 0;
+    width: 15rem;
+  }
+  main .seccionCardsReservas .estiloCardReservas2 .estiloCard .imagenReserva {
+    height: 20rem;
   }
 }
 
