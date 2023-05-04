@@ -1,28 +1,28 @@
-footer{
-    div{
-        section{
-            .face{
-                background-color: map-get($redes, face);
-            }
-            .twitter{
-                background-color: map-get($redes , twitter )
-            }
-            .ig{
-                background-color: map-get($redes, ig )
-            }
-            .wsp{
-                background-color: map-get($redes , wsp );
-            }
-            .google{
-                background-color: map-get($redes, google );
-            }
-        }
-    }
-    .infoFooter{
-        background-color: rgba(0, 0, 0, 0.2);
-        padding-bottom: 1rem;
-    }        
+.face {
+    background-color: map-get($redes, face);
 }
-
-
-
+.twitter {
+    background-color: map-get($redes , twitter);
+    animation-delay: 0.5s;
+}
+.ig {
+    background-color: map-get($redes, ig);
+    animation-delay: 1s;
+}
+.wsp {
+    background-color: map-get($redes , wsp);
+    animation-delay: 1.5s;
+}
+.google {
+    background-color: map-get($redes, google);
+    animation-delay: 2.0s;
+}
+.infoFooter {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-bottom: 1rem;
+    .anclaMail{
+        text-decoration: none;
+        color:white;
+        text-decoration: underline;
+    }
+}

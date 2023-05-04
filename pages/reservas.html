@@ -16,6 +16,7 @@
     <script src="https://kit.fontawesome.com/268dc6ed7a.js" crossorigin="anonymous"></script>
     <!--LOCAL BOOTSTRAP-->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/style.css">
     <title>Reservas | Moskú</title>
 </head>
@@ -67,7 +68,7 @@
         <section class="container seccionCardsReservas">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-4 estiloCardReservas ">
-                    <div class="card estiloCard">
+                    <div class="card estiloCard" data-aos="flip-left">
                         <!--tamaño img 830x990-->
                         <img class="imagenReserva" src="../assets/img/EnzoMoskuReservaRedim1.jpg" class=" card-img-top"
                             alt="fotografia barbero Enzo">
@@ -80,7 +81,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4 estiloCardReservas">
-                    <div class="card estiloCard">
+                    <div class="card estiloCard" data-aos="flip-left">
                         <img class="imagenReserva" src="../assets/img/IgnacioMoskuReservaRedim.jpg"
                             class=" card-img-top" alt="fotografia barbero Ignacio">
                         <div class="card-body">
@@ -93,7 +94,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4 estiloCardReservas">
-                    <div class="card estiloCard">
+                    <div class="card estiloCard" data-aos="flip-left">
                         <img class="imagenReserva" src="../assets/img/AlanMoskuReservaRedim.jpg" class="card-img-top"
                             alt="fotografia barbero Alan ">
                         <div class="card-body">
@@ -109,7 +110,7 @@
             <div class="row">
                 <div class="justify-content-center d-flex flex-wrap gap-4">
                     <div class="col-sm-12 col-md-12 col-lg-4 estiloCardReservas2 ">
-                        <div class="card estiloCard cardReserva">
+                        <div class="card estiloCard cardReserva" data-aos="flip-right">
                             <img class="imagenReserva" src="../assets/img/SantiMoskuReservaRedim.jpg"
                                 class="card-img-top" alt="fotografia barbero Santi">
                             <div class="card-body">
@@ -122,7 +123,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-12 flex-wrap col-lg-4 estiloCardReservas2 ">
-                        <div class="card estiloCard cardReserva">
+                        <div class="card estiloCard cardReserva" data-aos="flip-right">
                             <img class="imagenReserva" src="../assets/img/JoelMoskuReservaRedim.jpg"
                                 class="card-img-top" alt="fotografia barbero Joel">
                             <div class="card-body">
@@ -145,26 +146,26 @@
             <!-- Section: Social media -->
             <section class="mb-4 seccionIconos">
                 <!-- Facebook -->
-                <a class="buttonFooter btn text-white btn-floating m-3 face" href="https://www.facebook.com"
+                <a class="buttonFooter btn text-white btn-floating m-3 face icono" href="https://www.facebook.com"
                     target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
                 <!-- Twitter -->
-                <a class="buttonFooter btn text-white btn-floating m-3 twitter" href="https://twitter.com/"
+                <a class="buttonFooter btn text-white btn-floating m-3 twitter icono" href="https://twitter.com/"
                     target="_blank" role="button"><i class="fab fa-twitter"></i></a>
                 <!-- Instagram -->
-                <a class="buttonFooter btn text-white btn-floating m-3 ig"
+                <a class="buttonFooter btn text-white btn-floating m-3 ig icono"
                     href="https://www.instagram.com/moskubarberia" target="_blank" role="button"><i
                         class="fab fa-instagram"></i></a>
                 <!-- WhatsApp -->
-                <a class="buttonFooter btn text-white btn-floating m-3 wsp" href="https://wa.me/1138639232"
+                <a class="buttonFooter btn text-white btn-floating m-3 wsp icono" href="https://wa.me/1138639232"
                     target="_blank" role="button"><i class="fab fa-whatsapp"></i></a>
                 <!-- Google -->
-                <a class="buttonFooter btn text-white btn-floating m-3 google" href="https://www.google.com"
+                <a class="buttonFooter btn text-white btn-floating m-3 google icono" href="https://www.google.com"
                     target="_blank" role="button"><i class="fab fa-google"></i></a>
             </section>
         </div>
         <div class="text-center infoFooter">
             <div>
-                <a href="https://www.google.com">
+                <a class="anclaMail" href="https://www.google.com">
                     moskubarberia2020@gmail.com
                 </a>
             </div>
@@ -175,6 +176,10 @@
         </div>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -41,6 +41,21 @@
     margin-top: 0.4rem;
   }
 }
+@keyframes flotar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.icono {
+  animation: flotar infinite 6s ease-in-out;
+}
+
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Fondomosku1920px.jpg);
   background-position: center center;
@@ -61,10 +76,11 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Fondomosku720px.jpg);
   }
 }
-header nav div .logo {
+.logo {
   border-radius: 50%;
 }
-header nav div .animacionLogo {
+
+.animacionLogo {
   animation-duration: 5s;
   animation-name: animLogo;
   animation-iteration-count: infinite;
@@ -181,18 +197,19 @@ header nav div .animacionLogo {
   }
 }
 
-main .tituloReservas {
+.tituloReservas {
   margin: 8rem;
   margin-bottom: 15rem;
 }
-main .seccionCardsReservas {
+
+.seccionCardsReservas {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
   gap: 1rem;
 }
-main .seccionCardsReservas .estiloCard {
+.seccionCardsReservas .estiloCard {
   background-color: rgba(126, 117, 117, 0.555);
   font-family: "cinzel";
   font-weight: 100;
@@ -201,15 +218,15 @@ main .seccionCardsReservas .estiloCard {
   padding: 2.5rem;
   padding-top: 1rem;
 }
-main .seccionCardsReservas .estiloCard .imagenReserva {
+.seccionCardsReservas .estiloCard .imagenReserva {
   height: 25rem;
 }
-main .seccionCardsReservas .estiloCard .card-img-top {
+.seccionCardsReservas .estiloCard .card-img-top {
   width: 100%;
   height: 60%;
   object-fit: cover;
 }
-main .seccionCardsReservas .estiloCard .btnReserva {
+.seccionCardsReservas .estiloCard .btnReserva {
   background-color: rgba(130, 250, 106, 0.6980392157);
 }
 
@@ -258,28 +275,36 @@ main .seccionCardsReservas .estiloCard .btnReserva {
   }
 }
 
-main .tituloUbicacion {
+.tituloUbicacion {
   margin: 8rem;
 }
-main .videoUbicacion {
+
+.videoUbicacion {
   margin-bottom: 8rem;
 }
 
-main .tituloUnirse {
+.tituloUnirse {
   margin: 5rem;
 }
-main .formUnirse {
+
+.formUnirse {
   margin-bottom: 4rem;
 }
-main .formUnirse .botonEnviar, main .formUnirse .botonLimpiar {
+.formUnirse .botonEnviar, .formUnirse .botonLimpiar {
   background-color: rgba(37, 240, 37, 0.63);
   border: 0px;
   border-radius: 0.25rem;
   padding: 0.5rem;
   font-weight: bold;
 }
-main .formUnirse .botonLimpiar {
+.formUnirse .botonEnviar:hover, .formUnirse .botonLimpiar:hover {
+  background-color: rgb(0, 255, 0);
+}
+.formUnirse .botonLimpiar {
   background-color: rgba(235, 72, 72, 0.63);
+}
+.formUnirse .botonLimpiar:hover {
+  background-color: rgb(255, 0, 0);
 }
 
 @media screen and (max-width: 1199px) and (min-width: 0px) {
@@ -288,24 +313,38 @@ main .formUnirse .botonLimpiar {
   }
 }
 
-footer div section .face {
+.face {
   background-color: #3b5998;
 }
-footer div section .twitter {
+
+.twitter {
   background-color: #55acee;
+  animation-delay: 0.5s;
 }
-footer div section .ig {
+
+.ig {
   background-color: #ac2bac;
+  animation-delay: 1s;
 }
-footer div section .wsp {
+
+.wsp {
   background-color: #4db937;
+  animation-delay: 1.5s;
 }
-footer div section .google {
+
+.google {
   background-color: #dd4b39;
+  animation-delay: 2s;
 }
-footer .infoFooter {
+
+.infoFooter {
   background-color: rgba(0, 0, 0, 0.2);
   padding-bottom: 1rem;
+}
+.infoFooter .anclaMail {
+  text-decoration: none;
+  color: white;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

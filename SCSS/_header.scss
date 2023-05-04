@@ -1,16 +1,10 @@
-header{
-    nav{
-        div{
-            .logo {
-                border-radius: 50%;
-            }
-            .animacionLogo {
-                animation-duration: 5s;
-                animation-name: animLogo;
-                animation-iteration-count: infinite;
-                }
-        }
+.logo {
+    border-radius: 50%;
     }
+.animacionLogo {
+    animation-duration: 5s;
+    animation-name: animLogo;
+    animation-iteration-count: infinite;
 }
 
 @keyframes animLogo{

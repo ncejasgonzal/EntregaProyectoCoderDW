@@ -19,6 +19,7 @@
     <script src="https://kit.fontawesome.com/268dc6ed7a.js" crossorigin="anonymous"></script>
     <!--LOCAL BOOTSTRAP-->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Moskú | Incio</title>
 </head>
@@ -69,7 +70,7 @@
         <section class="container sectionCardIndex">
             <div class="row divCardsIndex">
                 <div class="columnasCard col-sm-12 col-md-12 col-lg-4">
-                    <div class="card estiloCard">
+                    <div class="card estiloCard" data-aos="flip-up" data-aos-duration="1800">
                         <img src="./assets/img/IMAGEN CARD RESERVAS.jpg" class="card-img-top"
                             alt="almanaque de reservas">
                         <div class="card-body cuerpoCardIndex">
@@ -81,7 +82,7 @@
                     </div>
                 </div>
                 <div class="columnasCard col-sm-12 col-md-12 col-lg-4">
-                    <div class="card estiloCard">
+                    <div class="card estiloCard" data-aos="flip-down" data-aos-duration="1800">
                         <img src="./assets/img/IMAGEN CARD UBICACION 1.avif" class="card-img-top"
                             alt="Mapa de ubicacion ilustrativo">
                         <div class="card-body cuerpoCardIndex">
@@ -93,7 +94,7 @@
                     </div>
                 </div>
                 <div class="columnasCard col-sm-12 col-md-12 col-lg-4">
-                    <div class="card estiloCard">
+                    <div class="card estiloCard" data-aos="flip-up" data-aos-duration="1800">
                         <img src="./assets/img/IMAGEN CARD UNIRSE 3.avif" class="card-img-top" alt="Mano con tijera">
                         <div class="card-body cuerpoCardIndex">
                             <h2 class="card-title h4Index">Unirse</h2>
@@ -115,30 +116,26 @@
         <div class="container p-4 pb-0">
             <section class="mb-4">
                 <!-- Facebook -->
-                <a class="buttonFooter btn text-white btn-floating m-3 face" href="https://www.facebook.com"
-                    target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
-
+                <a class="buttonFooter btn text-white btn-floating m-3 face icono" href="https://www.facebook.com"
+                    target="_blank" role="button"><i class="fab fa-facebook-f "></i></a>
                 <!-- Twitter -->
-                <a class="buttonFooter btn text-white btn-floating m-3 twitter" href="https://twitter.com/"
-                    target="_blank" role="button"><i class="fab fa-twitter"></i></a>
-
+                <a class="buttonFooter btn text-white btn-floating m-3 twitter icono" href="https://twitter.com/"
+                    target="_blank" role="button"><i class="fab fa-twitter "></i></a>
                 <!-- Instagram -->
-                <a class="buttonFooter btn text-white btn-floating m-3 ig"
+                <a class="buttonFooter btn text-white btn-floating m-3 ig icono"
                     href="https://www.instagram.com/moskubarberia" target="_blank" role="button"><i
-                        class="fab fa-instagram"></i></a>
-
+                        class="fab fa-instagram "></i></a>
                 <!-- WhatsApp -->
-                <a class="buttonFooter btn text-white btn-floating m-3 wsp" href="https://wa.me/1138639232"
-                    target="_blank" role="button"><i class="fab fa-whatsapp"></i></a>
-
+                <a class="buttonFooter btn text-white btn-floating m-3 wsp icono" href="https://wa.me/1138639232"
+                    target="_blank" role="button"><i class="fab fa-whatsapp "></i></a>
                 <!-- Google -->
-                <a class="buttonFooter btn text-white btn-floating m-3 google" href="https://www.gmail.com"
-                    target="_blank" role="button"><i class="fab fa-google"></i></a>
+                <a class="buttonFooter btn text-white btn-floating m-3 google icono" href="https://www.gmail.com"
+                    target="_blank" role="button"><i class="fab fa-google "></i></a>
             </section>
         </div>
         <div class="text-center infoFooter">
             <div>
-                <a href="https://www.gmail.com" target="_blank">
+                <a class="anclaMail" href="https://www.gmail.com" target="_blank">
                     moskubarberia2020@gmail.com
                 </a>
             </div>
@@ -154,6 +151,10 @@
         crossorigin="anonymous"></script>-->
     <!--LOCAL JS-->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
