@@ -176,6 +176,9 @@ body {
 .mainProductos .sectionCardsProductos .estiloCard .btnAzul {
   background-color: rgb(35, 104, 207);
 }
+.mainProductos .sectionCardsProductos .estiloCard .btnAzul:hover {
+  background-color: rgb(0, 50, 124);
+}
 
 @media screen and (max-width: 1199px) and (min-width: 0px) {
   .mainProductos .carousel {
@@ -229,19 +232,22 @@ body {
 .seccionCardsReservas .estiloCard .btnReserva {
   background-color: rgba(130, 250, 106, 0.6980392157);
 }
+.seccionCardsReservas .estiloCard .btnReserva:hover {
+  background-color: #2bff00;
+}
 
 @media screen and (max-width: 1199px) and (min-width: 0px) {
-  main .tituloReservas {
+  .tituloReservas {
     margin: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   }
-  main .seccionCardsReservas {
+  .seccionCardsReservas {
     margin-top: 10rem;
   }
-  main .seccionCardsReservas .estiloCardReservas {
+  .seccionCardsReservas .estiloCardReservas {
     width: 20rem;
     height: 20rem;
     flex-wrap: wrap;
@@ -251,14 +257,14 @@ body {
     padding-bottom: 10rem;
     padding-top: 0;
   }
-  main .seccionCardsReservas .estiloCardReservas .estiloCard {
+  .seccionCardsReservas .estiloCardReservas .estiloCard {
     padding: 0;
     width: 15rem;
   }
-  main .seccionCardsReservas .estiloCardReservas .estiloCard .imagenReserva {
+  .seccionCardsReservas .estiloCardReservas .estiloCard .imagenReserva {
     height: 20rem;
   }
-  main .seccionCardsReservas .estiloCardReservas2 {
+  .seccionCardsReservas .estiloCardReservas2 {
     width: 19rem;
     height: 20rem;
     padding-right: 0.5rem;
@@ -266,15 +272,14 @@ body {
     margin-left: 5.8rem;
     gap: none;
   }
-  main .seccionCardsReservas .estiloCardReservas2 .estiloCard {
+  .seccionCardsReservas .estiloCardReservas2 .estiloCard {
     padding: 0;
     width: 15rem;
   }
-  main .seccionCardsReservas .estiloCardReservas2 .estiloCard .imagenReserva {
+  .seccionCardsReservas .estiloCardReservas2 .estiloCard .imagenReserva {
     height: 20rem;
   }
 }
-
 .tituloUbicacion {
   margin: 8rem;
 }

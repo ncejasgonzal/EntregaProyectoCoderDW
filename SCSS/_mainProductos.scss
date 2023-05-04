@@ -32,6 +32,9 @@
             .btnAzul{
                 @extend .btnNegro;
                 background-color: rgb(35, 104, 207);
+                &:hover{
+                    background-color: rgb(0, 50, 124);
+                }
             }
         }
     }

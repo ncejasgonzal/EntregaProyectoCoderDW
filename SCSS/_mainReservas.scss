@@ -22,56 +22,58 @@
         }
         .btnReserva{
             background-color: #82fa6ab2;
+            &:hover{
+                background-color: #2bff00;
+            }
         }
     }
 }
 
-main{
-    @media screen and (max-width: 1199px) and (min-width: 0px){
-        .tituloReservas{
-            margin: 4rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+
+@media screen and (max-width: 1199px) and (min-width: 0px){
+    .tituloReservas{
+        margin: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .seccionCardsReservas{
+        margin-top: 10rem;
+        .estiloCardReservas{
+            width: 20rem;
+            height: 20rem;
             flex-wrap: wrap;
-        }
-        .seccionCardsReservas{
-            margin-top: 10rem;
-            .estiloCardReservas{
-                width: 20rem;
-                height: 20rem;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                margin-bottom: 12rem;
-                margin-left: 7rem;
-                padding-bottom: 10rem;
-                padding-top: 0;
-                .estiloCard{
-                    padding: 0;
-                    width: 15rem;
-                    .imagenReserva{
-                        height: 20rem;
-                    }
-                }
-            }
-            .estiloCardReservas2{
-                width: 19rem;
-                height: 20rem;
-                padding-right: 0.5rem;
-                margin-bottom: 10rem;
-                margin-left: 5.8rem;
-                gap: none;
-                .estiloCard{
-                    padding: 0;
-                    width: 15rem;
-                    .imagenReserva{
-                        height: 20rem;
-                    }
+            justify-content: space-around;
+            margin-bottom: 12rem;
+            margin-left: 7rem;
+            padding-bottom: 10rem;
+            padding-top: 0;
+            .estiloCard{
+                padding: 0;
+                width: 15rem;
+                .imagenReserva{
+                    height: 20rem;
                 }
             }
         }
-        
+        .estiloCardReservas2{
+            width: 19rem;
+            height: 20rem;
+            padding-right: 0.5rem;
+            margin-bottom: 10rem;
+            margin-left: 5.8rem;
+            gap: none;
+            .estiloCard{
+                padding: 0;
+                width: 15rem;
+                .imagenReserva{
+                    height: 20rem;
+                }
+            }
+        }
     }
 }
+
 
 
