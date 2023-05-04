@@ -281,7 +281,7 @@ body {
   }
 }
 .tituloUbicacion {
-  margin: 8rem;
+  margin: 7rem;
 }
 
 .videoUbicacion {
@@ -314,7 +314,7 @@ body {
 
 @media screen and (max-width: 1199px) and (min-width: 0px) {
   main .tituloUnirse {
-    margin: 3.5rem;
+    margin: 3rem;
   }
 }
 
