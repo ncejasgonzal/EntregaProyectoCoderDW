@@ -226,6 +226,7 @@ body {
 }
 .seccionCardsReservas .estiloCard .imagenReserva {
   height: 25rem;
+  object-fit: cover;
 }
 .seccionCardsReservas .estiloCard .card-img-top {
   width: 100%;
