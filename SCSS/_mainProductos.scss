@@ -11,30 +11,28 @@
         -webkit-backdrop-filter: blur(12px);
         text-align: $centrar;
     }
-    .sectionCardsProductos{
-        .estiloCard{
-            background-color: rgba(126, 117, 117, 0.555);
-            font-family: $fuente-principal;
-            font-weight: 100;
-            margin-bottom: $margin-b3;
-            margin-top: 4rem;
-            .card-img-top{
-                width:$ancho-100;
-                height: 60%;
-                object-fit: cover;
+    .estiloCard{
+        background-color: rgba(126, 117, 117, 0.555);
+        font-family: $fuente-principal;
+        font-weight: 100;
+        margin-bottom: $margin-b3;
+        margin-top: 4rem;
+        .card-img-top{
+            width:$ancho-100;
+            height: 60%;
+            object-fit: cover;
+        }
+        .btnNegro{
+                display: inline-block;
+                border-radius: 0.25rem;
+                color: aliceblue;
+                background-color: black;
             }
-            .btnNegro{
-                    display: inline-block;
-                    border-radius: 0.25rem;
-                    color: aliceblue;
-                    background-color: black;
-                }
-            .btnAzul{
-                @extend .btnNegro;
-                background-color: rgb(35, 104, 207);
-                &:hover{
-                    background-color: rgb(0, 50, 124);
-                }
+        .btnAzul{
+            @extend .btnNegro;
+            background-color: rgb(35, 104, 207);
+            &:hover{
+                background-color: rgb(0, 50, 124);
             }
         }
     }
@@ -52,14 +50,12 @@
             -webkit-backdrop-filter: blur(12px);
             text-align: $centrar;
         }
-        .sectionCardsProductos{
-            .estiloCard{
-                margin-top: 0.8rem;
-                width: 80%;
-                display: flex;
-                justify-content: center;
-                margin-left: 10%;
-            }
-        }        
-    }
+        .estiloCard{
+            margin-top: 0.8rem;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            margin-left: 10%;
+        }
+    }        
 }
