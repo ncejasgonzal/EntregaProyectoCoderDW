@@ -1,151 +1,444 @@
-/*import de fuentes*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,500;1,700&display=swap');
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
+/*maps*/
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../assets/img/Fondomosku.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: aliceblue;
-    font-family: 'Open Sans' , sans-serif;
-    
+.h1Index {
+  color: white;
+  font-size: 2rem;
 }
 
-@media screen and (max-width: 1199px) and (min-width: 0px){
-    .h1Index {
+.h2Index {
+  color: white;
+  font-size: 1.7rem;
+}
+
+.h3Index {
+  color: white;
+}
+
+.h4Index {
+  color: white;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 0px) {
+  .h1Index {
     font-size: 1.5rem;
     margin: 0;
     padding: 0;
-    }
-}
-
-@media screen and (max-width: 1199px) and (min-width: 0px){
-    .h2Index {
+  }
+  .h2Index {
     font-size: 1.2rem;
     margin: 0;
     padding: 0;
-    }
-}
-
-@media screen and (max-width: 1199px) and (min-width: 0px){
-    .h4Index {
+  }
+  .h4Index {
     font-size: 1rem;
     margin-top: 0.4rem;
-    }
+  }
+}
+@keyframes flotar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.icono {
+  animation: flotar infinite 6s ease-in-out;
 }
 
-
-.parrafoIndex{
-    margin: 1rem;
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Fondomosku1920px.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  font-family: "cinzel";
 }
 
-
-.estiloCard{
-    background-color: rgba(126, 117, 117, 0.555);
-    font-family: 'Open Sans' , sans-serif;
-    font-weight: 100;
+@media screen and (max-width: 1280px) and (min-width: 721px) {
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Fondomosku1280px.jpg);
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 0px) {
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Fondomosku720px.jpg);
+  }
+}
+.logo {
+  border-radius: 50%;
 }
 
+.animacionLogo {
+  animation-duration: 5s;
+  animation-name: animLogo;
+  animation-iteration-count: infinite;
+}
 
-@media screen and (max-width: 1199px) and (min-width: 0px){
-    .estiloCard {
+@keyframes animLogo {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotateY(180deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotateY(360deg);
+  }
+}
+.MainIndex .TituloMianIndex {
+  margin-top: 8rem;
+  margin-bottom: 10rem;
+}
+.MainIndex .estiloCard {
+  background-color: rgba(126, 117, 117, 0.555);
+  font-family: "cinzel";
+  font-weight: 100;
+  margin-bottom: 3rem;
+}
+.MainIndex .estiloCard .card-img-top {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+.MainIndex .estiloCard .cuerpoCardIndex .btnNegro, .MainIndex .estiloCard .cuerpoCardIndex .btnBlanco, .MainIndex .estiloCard .cuerpoCardIndex .btnAzul {
+  display: inline-block;
+  border-radius: 0.25rem;
+  color: aliceblue;
+  background-color: black;
+}
+.MainIndex .estiloCard .cuerpoCardIndex .btnAzul {
+  background-color: rgb(35, 104, 207);
+}
+.MainIndex .estiloCard .cuerpoCardIndex .btnBlanco {
+  background-color: white;
+  color: black;
+}
+.MainIndex .contenedorVideo {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 0px) {
+  .MainIndex .TituloMianIndex {
+    text-align: center;
+  }
+  .MainIndex .estiloCard {
     margin-top: 0.8rem;
-    }
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+  }
 }
 
-.card-img-top{
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
+.mainProductos .carousel {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  width: 70%;
+  display: flex;
+  margin-left: 15%;
+}
+.mainProductos .tituloYParrafoProductos {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  text-align: center;
+}
+.mainProductos .estiloCard {
+  background-color: rgba(126, 117, 117, 0.555);
+  font-family: "cinzel";
+  font-weight: 100;
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+}
+.mainProductos .estiloCard .card-img-top {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+.mainProductos .estiloCard .btnNegro, .mainProductos .estiloCard .btnAzul, .mainProductos .MainIndex .estiloCard .cuerpoCardIndex .btnAzul, .MainIndex .mainProductos .estiloCard .cuerpoCardIndex .btnAzul, .mainProductos .MainIndex .estiloCard .cuerpoCardIndex .btnBlanco, .MainIndex .mainProductos .estiloCard .cuerpoCardIndex .btnBlanco {
+  display: inline-block;
+  border-radius: 0.25rem;
+  color: aliceblue;
+  background-color: black;
+}
+.mainProductos .estiloCard .btnAzul {
+  background-color: rgb(35, 104, 207);
+}
+.mainProductos .estiloCard .btnAzul:hover {
+  background-color: rgb(0, 50, 124);
 }
 
-
-/*
-.card{
-    position: relative;
-    display: inline-block;
-    flex-direction: row;
-    
-}*/
-
-.cardTexto{
-    color: black;
-}
-
-.contenedorVideo{
-    margin-top: 2rem;
-}
-
-/*------------------------------- HASTA ACÁ LLEGA EL ESTILADO DEL INDEX-------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------- COMIENZA ESTILADO DE "PRODUCTOS"-------------------------------*/
-
-.carousel{
-    margin-top:4rem;
-    margin-bottom: 5.3rem;
-}
-
-
-
-@media screen and (max-width: 1199px) and (min-width: 0px){
-    .carousel{
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        padding-bottom: 0;
-    }
-}
-
-.tituloYParrafoProductos{
+@media screen and (max-width: 1199px) and (min-width: 0px) {
+  .mainProductos .carousel {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 0;
+  }
+  .mainProductos .tituloYParrafoProductos {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     text-align: center;
+  }
+  .mainProductos .estiloCard {
+    margin-top: 0.8rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+  }
 }
 
-.card{
-    margin-bottom: 1rem;
+.tituloReservas {
+  margin: 8rem;
+  margin-bottom: 15rem;
 }
 
-/*------------------------------- HASTA ACÁ LLEGA EL ESTILADO DE PRODUCTOS-------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------COMIENZA ESTILADO DE "RESERVAS"---------------------------------*/
-
-.seccionCardsReservas{
-    margin-top: 3rem;
+.seccionCardsReservas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1rem;
+}
+.seccionCardsReservas .estiloCard {
+  background-color: rgba(126, 117, 117, 0.555);
+  font-family: "cinzel";
+  font-weight: 100;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  padding: 2.5rem;
+  padding-top: 1rem;
+}
+.seccionCardsReservas .estiloCard .imagenReserva {
+  height: 25rem;
+  object-fit: cover;
+}
+.seccionCardsReservas .estiloCard .card-img-top {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+.seccionCardsReservas .estiloCard .btnReserva {
+  background-color: rgba(130, 250, 106, 0.6980392157);
+}
+.seccionCardsReservas .estiloCard .btnReserva:hover {
+  background-color: #2bff00;
 }
 
-@media screen and (max-width: 1199px) and (min-width: 0px){
-    .estiloCardReservas{
-        width: 20rem;
-        height: 20rem;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-bottom: 10rem;
-        margin-left: 4rem;
-        padding-bottom: 10rem;
-        padding-top: 0;
-    }
-}
-
-@media screen and (max-width: 1199px) and (min-width: 0px){
-    .estiloCardReservas2{
-        width: 19rem;
-        height: 20rem;
-        padding-right: 0.5rem;
-        margin-bottom: 10rem;
-        gap: none;
-    }
-}
-
-.imagenReserva{
+@media screen and (max-width: 1199px) and (min-width: 0px) {
+  .tituloReservas {
+    margin-top: 6rem;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .seccionCardsReservas {
+    margin-top: 1rem;
+  }
+  .seccionCardsReservas .estiloCardReservas {
+    width: 80%;
     height: 20rem;
+    margin-bottom: 12rem;
+    margin-left: 16%;
+  }
+  .seccionCardsReservas .estiloCardReservas .estiloCard {
+    padding: 0;
+    width: 15rem;
+  }
+  .seccionCardsReservas .estiloCardReservas .estiloCard .imagenReserva {
+    height: 20rem;
+  }
+  .seccionCardsReservas .estiloCardReservas2 {
+    width: 80%;
+    height: 20rem;
+    padding-right: 0.5rem;
+    margin-bottom: 10rem;
+    margin-left: 15%;
+    gap: none;
+  }
+  .seccionCardsReservas .estiloCardReservas2 .estiloCard {
+    padding: 0;
+    width: 15rem;
+  }
+  .seccionCardsReservas .estiloCardReservas2 .estiloCard .imagenReserva {
+    height: 20rem;
+  }
+}
+.tituloUbicacion {
+  margin: 5rem;
+  text-align: center;
 }
 
-.btnReserva{
-    background-color: #82fa6ab2;
+.videoUbicacion {
+  margin-bottom: 8rem;
 }
+
+.tituloUnirse {
+  text-align: center;
+}
+
+.formUnirse {
+  margin-bottom: 4rem;
+}
+.formUnirse .botonEnviar, .formUnirse .botonLimpiar {
+  background-color: rgba(37, 240, 37, 0.63);
+  border: 0px;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+.formUnirse .botonEnviar:hover, .formUnirse .botonLimpiar:hover {
+  background-color: rgb(0, 255, 0);
+}
+.formUnirse .botonLimpiar {
+  background-color: rgba(235, 72, 72, 0.63);
+}
+.formUnirse .botonLimpiar:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+@media screen and (max-width: 1199px) and (min-width: 0px) {
+  main .tituloUnirse {
+    margin: 1rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    text-align: center;
+  }
+}
+
+.body404 {
+  background-color: #ffffff;
+  background-image: linear-gradient(to right, #51514d, #474640, #3d3b34, #333028, #2a261d);
+  background-size: cover;
+  background-position: center;
+}
+.body404 .titulo404 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #e6d221;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.body404 .imagenTijeras404 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.body404 .error-container {
+  max-width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  background-color: rgba(247, 247, 247, 0.8);
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.body404 .error-container .subtitulo404 {
+  color: #000000;
+  font-weight: bold;
+}
+.body404 .error-container .parrafo404 {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.body404 .error-container .inicio404 {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+.body404 .error-container .inicio404:hover {
+  background-color: #e6d221;
+  color: black;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 0px) {
+  .body404 .titulo404 {
+    font-size: 1.5rem;
+  }
+}
+.face {
+  background-color: #3b5998;
+  margin: 1rem;
+}
+
+.twitter {
+  background-color: #55acee;
+  animation-delay: 0.5s;
+  margin: 1rem;
+}
+
+.ig {
+  background-color: #ac2bac;
+  animation-delay: 1s;
+  margin: 1rem;
+}
+
+.wsp {
+  background-color: #4db937;
+  animation-delay: 1.5s;
+  margin: 1rem;
+}
+
+.google {
+  background-color: #dd4b39;
+  animation-delay: 2s;
+  margin: 1rem;
+}
+
+.infoFooter {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-bottom: 1rem;
+}
+.infoFooter .anclaMail {
+  text-decoration: none;
+  color: white;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 0px) {
+  .face {
+    margin: 0.5rem;
+  }
+  .twitter {
+    margin: 0.5rem;
+  }
+  .ig {
+    margin: 0.5rem;
+  }
+  .wsp {
+    margin: 0.5rem;
+  }
+  .google {
+    margin: 0.5rem;
+  }
+  .infoFooter {
+    margin: 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

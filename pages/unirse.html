@@ -5,25 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoskúBarberiaTradicional</title>
+    <meta name="description" content="Unite a Moskú y no te pierdas de todas las novedades y promociones que tenemos para vos!">
+    <meta name="keywords" content="Unite, ofertas, novedades, noticias, promos, precios, dias, atencion, cronograma">
     <!--icono favicon-->
     <link rel="icon" href="../favicon.ico.png" type="image/x-icon">
-
     <!--LINK CSS BOOTSTRAP
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
-    <!--LOCAL BOOTSTRAP-->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
     <!--link cdn para iconos Fontawesome-->
     <script src="https://kit.fontawesome.com/268dc6ed7a.js" crossorigin="anonymous"></script>
+    <!--LOCAL BOOTSTRAP-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Unirse | Moskú</title>
 </head>
 
-<body>
+<body class="fondoMosku">
     <header class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent h5">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="../assets/img/Logo_mosku_2-removebg-preview.png" height="75"
+                <a class="navbar-brand" href="../index.html"><img class="logo animacionLogo" src="../assets/img/LOGOMOSKU3.png" height="75"
                         alt="Logo Moskú barbería con mostacho"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,25 +54,25 @@
         </nav>
     </header>
     <main class="container">
-        <section>
+        <section class="tituloUnirse">
             <div class="h1  d-flex justify-content-center flex-wrap">
                 <h1 class="h1Index ">
-                    Unite a la sociedad Moskú
+                    Unite a la sociedad Moskú.
                 </h1>
             </div>
             <div class="h3  d-flex justify-content-center flex-wrap">
                 <h2 class="h2Index">
-                    Dejanos tus datos
+                    Dejanos tus datos.
                 </h2>
             </div>
             <div class="h4 d-flex justify-content-center flex-wrap text-center h4Index">
                 <p">
-                    Vas a recibir actualizaciones de precios, ofertas, dias de apertura y mucho más!
+                    ¡Vas a recibir actualizaciones de precios, ofertas, días de apertura y mucho más!
                     </p>
             </div>
         </section>
         <hr>
-        <form class="">
+        <form class="formUnirse" action="../error404.html">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Ingrese su nombre y apellido</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombrey apellido" required>
@@ -84,45 +86,52 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <div>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpiar">
+                <input class="botonEnviar" type="submit" value="Enviar">
+                <input class="botonLimpiar" type="reset" value="Cancelar">
             </div>
         </form>
     </main>
+    <hr>
     <footer class="container-fluid bg-transparent text-center text-white">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
             <!-- Section: Social media -->
             <section class="mb-4">
                 <!-- Facebook -->
-                <a class="buttonFooter btn text-white btn-floating m-3" style="background-color: #3b5998;"
+                <a class="buttonFooter btn text-white btn-floating face icono"
                     href="https://www.facebook.com" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
-
                 <!-- Twitter -->
-                <a class="buttonFooter btn text-white btn-floating m-3" style="background-color: #55acee;"
+                <a class="buttonFooter btn text-white btn-floating twitter icono"
                     href="https://twitter.com/" target="_blank" role="button"><i class="fab fa-twitter"></i></a>
-
                 <!-- Instagram -->
-                <a class="buttonFooter btn text-white btn-floating m-3" style="background-color: #ac2bac;"
+                <a class="buttonFooter btn text-white btn-floating ig icono"
                     href="https://www.instagram.com/moskubarberia" target="_blank" role="button"><i
                         class="fab fa-instagram"></i></a>
-
                 <!-- WhatsApp -->
-                <a class="buttonFooter btn text-white btn-floating m-3" style="background-color: #4db937;"
-                    href="https://wa.me/1138639232" target="_blank" role="button"><i class="fab fa-whatsapp"></i></a>
-
+                <a class="buttonFooter btn text-white btn-floating wsp icono"
+                    href="https://wa.me/541138639232" target="_blank" role="button"><i class="fab fa-whatsapp"></i></a>
                 <!-- Google -->
-                <a class="buttonFooter btn text-white btn-floating m-3" style="background-color: #dd4b39;"
+                <a class="buttonFooter btn text-white btn-floating google icono"
                     href="https://www.google.com" target="_blank" role="button"><i class="fab fa-google"></i></a>
-
             </section>
         </div>
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2023 Copyright: Nicolás Agustín Cejas González.
+        <div class="text-center infoFooter">
+            <div>
+                <a class="anclaMail" href="https://www.google.com">
+                    moskubarberia2020@gmail.com
+                </a>    
+            </div>
+            <!-- Copyright -->
+            <div>
+                © 2023 Copyright: Nicolás Agustín Cejas González.
+            </div>
         </div>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
